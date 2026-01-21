@@ -1,0 +1,285 @@
+section {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  background-color: #212121;
+}
+
+.hero {
+  height: 100vh;
+}
+
+.section__guide {
+  position: absolute;
+  left: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 60%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  opacity: 0.3;
+  transition: all 0.4s ease;
+  z-index: 2;
+
+  mix-blend-mode: difference;
+}
+
+.guide__index {
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: #fff;
+}
+
+.guide__dot {
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.guide__line {
+  flex: 1;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+.guide__title {
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  writing-mode: vertical-rl;
+  color: #fff;
+}
+
+.section.is-active .section__guide {
+  opacity: .74;
+}
+
+.section.is-active .guide__line {
+  width: 2px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.section.is-active .guide__dot {
+  transform: scale(1.4);
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.hero__bg video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.64);
+  z-index: 0;
+}
+
+.message__inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.hero__frame {
+  position: absolute;
+  width: calc(100% - 80px);
+  height: calc(100% - 60px);
+  padding: 160px;
+  border-bottom-right-radius: 200px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .12);
+  overflow: hidden;
+}
+
+.hero__inner {
+  height: calc(100vh - 60px);
+  padding: 160px;
+}
+
+.inner__title {
+  position: static;
+  z-index: 1;
+  color: rgba(255, 255, 255, .87);
+  font-weight: 400;
+  font-size: 40px;
+  padding-top: 40px;
+  margin-bottom: 14px;
+  mix-blend-mode: difference;
+}
+
+.inner__title b {
+  color: rgba(255, 255, 255, .94);
+  font-weight: 600;
+}
+
+.inner__desc {
+  position: static;
+  z-index: 1;
+  color: rgba(255, 255, 255, .72);
+  mix-blend-mode: difference;
+  margin-bottom: 22px;
+}
+
+.inner__cta {
+  position: static;
+  z-index: 1;
+  background-color: #3262ad;
+  padding: 12px 16px;
+  font-size: 14px;
+  transition: all .4s;
+}
+
+.inner__cta:hover {
+  background-color: #1f437b;
+  cursor: pointer;
+}
+
+.inner__cta span {
+  display: inline-block;
+  padding: 0 16px;
+}
+
+.inner__cta span:first-child {
+  border-right: 1px solid rgba(255, 255, 255, .84);
+}
+
+.section__wrapper {
+  margin: auto;
+  max-width: 1420px;
+  position: relative;
+}
+
+.product {
+  height: auto;
+}
+
+.product .section__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.product__inner {
+  padding: 20px 160px;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: visible;
+  user-select: none;
+  cursor: grab;
+  margin-bottom: 20px;
+  z-index: 0;
+}
+
+.carousel:active {
+  cursor: grabbing;
+}
+
+.carousel__track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel__item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+  will-change: transform, opacity, filter;
+  transition:
+    opacity 0.4s ease,
+    filter 0.4s ease;
+}
+
+.carousel__item img {
+  width: 260px;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  pointer-events: none;
+  padding: 0 20px;
+}
+
+.carousel__item {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.equipment {
+    background-color: #fff;
+}
+
+.equipment .section__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* 이미지 */
+.equipment__images {
+  position: relative;
+  width: 600px;
+  height: 600px;
+}
+
+.equip-img {
+  position: absolute;
+  top: 40%;
+  right: 120px;
+  width: 400px;
+  opacity: 0;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, .56);
+}
+
+/* 초기 상태 */
+.fade-slide {
+  opacity: 0;
+  transform: translate(120px, -50%);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* 활성화 */
+.fade-slide.active {
+  opacity: 1;
+  transform: translate(0, -50%);
+}
+
+/* 딜레이 */
+.delay-1 {
+  transition-delay: 0.15s;
+}
+
+.delay-2 {
+  transition-delay: 0.3s;
+}
+
+.delay-2 {
+  top: 60%;
+  right: 240px;
+}

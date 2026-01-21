@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KATEM - 동력전달용 부품 전문기업</title>
+
+    <link rel="icon" href="/favicon.ico">
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/sub.css">
+    <link rel="stylesheet" href="/css/variables.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+</head>
+
+<body>
+    <header id="header" class="sub">
+        <div class="header-top">
+            <div class="header-wrapper">
+                <a class="header-sitemap" href="/sub/etc/sitemap.html">三</a>
+                <div class="header-logo">
+                    <a href="/index.html"><img src="/assets/image/logo-c0.png" alt="카템 로고" /></a>
+                </div>
+                <div class="header-language-selector">
+                    <a href="/index.html" class="sel">KOR</a>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="/eng/index.html">ENG</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-bot">
+            <div class="header-wrapper">
+                <ul class="nav-main">
+                    <li class="nav-main-item"><a href="/sub/company/greeting.html">회사소개</a></li>
+                    <li class="nav-main-item"><a href="/sub/business/train.html">사업분야</a></li>
+                    <li class="nav-main-item"><a href="/sub/product/product1.html">제품소개</a></li>
+                    <li class="nav-main-item"><a href="/sub/management/quality.html">지속가능경영</a></li>
+                    <li class="nav-main-item"><a href="/sub/system/laboratory.html">R&D</a></li>
+                    <li class="nav-main-item"><a href="/sub/service/notice.html">고객센터</a></li>
+                </ul>
+                <ul class="nav-subs">
+                    <li class="nav-subs-item">
+                        <ul class="nav-subs-list">
+                            <li class="nav-subs-list-item"><a href="/sub/company/greeting.html">인사말</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/company/history.html">연혁</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/company/vision.html">비전 & 경영이념</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/company/ideal.html">인재상</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/company/organization.html">조직도</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-subs-item">
+                        <ul class="nav-subs-list">
+                            <li class="nav-subs-list-item"><a href="/sub/business/train.html">고속철도</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/business/defense.html">방산부품</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/business/construction.html">건설장비</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/business/vehicle.html">상용차</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-subs-item">
+                        <ul class="nav-subs-list">
+                            <li class="nav-subs-list-item"><a href="/sub/product/product1.html">제동디스크</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/product/product2.html">트리포드 구동축</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/product/product3.html">굴삭기용 구동축</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/product/product4.html">드라이브샤프트 류</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-subs-item">
+                        <ul class="nav-subs-list">
+                            <li class="nav-subs-list-item"><a href="/sub/management/quality.html">품질경영</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/management/ethic.html">윤리경영</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-subs-item">
+                        <ul class="nav-subs-list">
+                            <li class="nav-subs-list-item"><a href="/sub/system/laboratory.html">연구소 개요</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/system/analysis.html">해석</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/system/evaluation.html">신뢰성 평가</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/system/rnd.html">연구개발</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/system/license.html">특허</a></li>
+                        </ul>
+                    <li class="nav-subs-item">
+                        <ul class="nav-subs-list">
+                            <li class="nav-subs-list-item"><a href="/sub/service/notice.html">공지사항</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/service/product.html">제품문의</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <button id="mobile-menu-btn" aria-label="모바일 메뉴 열기">三</button>
+        <!-- 모바일 사이드 메뉴 -->
+        <nav id="mobile-side-menu" aria-hidden="true">
+            <div class="mobile-menu-header">
+                <a href="/index.html" class="mobile-logo">
+                    <img src="/assets/image/logo-c0.png" alt="카템 로고" />
+                </a>
+                <button id="mobile-menu-close-btn" aria-label="모바일 메뉴 닫기">&times;</button>
+            </div>
+
+            <div class="mobile-language-switcher">
+                <button class="lang-btn sel" data-lang="kor">KOR</button>
+                <button class="lang-btn" data-lang="eng">ENG</button>
+            </div>
+
+            <ul class="mobile-nav-main">
+                <li class="has-submenu">
+                    <button class="accordion-btn" aria-expanded="false">
+                        회사소개
+                        <span class="arrow"></span>
+                    </button>
+                    <ul class="submenu">
+                        <li><a href="/sub/company/greeting.html">인사말</a></li>
+                        <li><a href="/sub/company/history.html">연혁</a></li>
+                        <li><a href="/sub/company/vision.html">비전 & 경영이념</a></li>
+                        <li><a href="/sub/company/ideal.html">인재상</a></li>
+                        <li><a href="/sub/company/organization.html">조직도</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <button class="accordion-btn" aria-expanded="false">
+                        사업분야
+                        <span class="arrow"></span>
+                    </button>
+                    <ul class="submenu">
+                        <li><a href="/sub/business/train.html">고속철도</a></li>
+                        <li><a href="/sub/business/defense.html">방산부품</a></li>
+                        <li><a href="/sub/business/construction.html">건설장비</a></li>
+                        <li><a href="/sub/business/vehicle.html">상용차</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <button class="accordion-btn" aria-expanded="false">
+                        제품소개
+                        <span class="arrow"></span>
+                    </button>
+                    <ul class="submenu">
+                        <li><a href="/sub/product/product1.html">제동디스크</a></li>
+                        <li><a href="/sub/product/product2.html">트리포드 구동축</a></li>
+                        <li><a href="/sub/product/product3.html">굴삭기용 구동축</a></li>
+                        <li><a href="/sub/product/product4.html">드라이브샤프트 류</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <button class="accordion-btn" aria-expanded="false">
+                        지속가능경영
+                        <span class="arrow"></span>
+                    </button>
+                    <ul class="submenu">
+                        <li><a href="/sub/management/quality.html">품질경영</a></li>
+                        <li><a href="/sub/management/ethic.html">윤리경영</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <button class="accordion-btn" aria-expanded="false">
+                        R&D
+                        <span class="arrow"></span>
+                    </button>
+                    <ul class="submenu">
+                        <li><a href="/sub/system/laboratory.html">연구소 개요</a></li>
+                        <li><a href="/sub/system/analysis.html">해석</a></li>
+                        <li><a href="/sub/system/evaluation.html">신뢰성 평가</a></li>
+                        <li><a href="/sub/system/rnd.html">연구개발</a></li>
+                        <li><a href="/sub/system/license.html">특허</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-submenu">
+                    <button class="accordion-btn" aria-expanded="false">
+                        고객센터
+                        <span class="arrow"></span>
+                    </button>
+                    <ul class="submenu">
+                        <li><a href="/sub/service/notice.html">공지사항</a></li>
+                        <li><a href="/sub/service/product.html">제품문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="sub-content-header business">
+        <div class="sub-content-title">방산부품</div>
+        <div class="sub-content-detail">
+            <b>㈜카템</b>은 육상 방산 차량 핵심부품(동력전달·제동계통) 국산화와 KTX 적용 기술까지 보유한<br />
+            국내 대표 방산 부품 연구개발·양산 기업입니다.
+        </div>
+    </div>
+    <div class="sub-nav">
+        <ul class="nav-list">
+            <li class="nav-list-item">
+                <a href="/sub/business/train.html">고속철도</a>
+            </li>
+            <li class="nav-list-item">
+                <b>방산부품</b>
+            </li>
+            <li class="nav-list-item">
+                <a href="/sub/business/construction.html">건설장비</a>
+            </li>
+            <li class="nav-list-item">
+                <a href="/sub/business/vehicle.html">상용차</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="sub-content-container">
+        <div class="sub-content-main business">
+            <div class="business-container">
+                <ul class="img-list-container defense">
+                    <li class="business-list"></li>
+                    <li class="business-list"></li>
+                    <li class="business-list"></li>
+                </ul>
+            </div>
+            <div class="business-detail-container">
+                <h3 class="devide-title">사업 개요</h3>
+                <p class="devide-detail">방산 분야는 최근 K-방산으로 대표되는 축적된 기술력을 바탕으로 한 대한민국의 핵심기술 분야로, 국내외에서 많은 주목을 받고 있으며, 국내
+                    수출 실적에서도 괄목할 만한 성장세를 유지하고 있습니다.<br />
+                    ㈜카템은 방산 부품 분야의 원천기술 확보를 위해 오랫동안 노력해왔으며, 특히 육상방산용 차량부품 분야에서 상용차용 부품 기술을 기반으로 한 동력전달 및 제동용 부품의 설계, 제작,
+                    평가 등 핵심부품 연구개발에 많은 실적을 보유하고 있습니다.</p>
+
+                <h3 class="devide-title">주요 기술 & 성과</h3>
+                <ul class="devide-detail">
+                    <li>25톤급 전투차량(장갑차)용: 프로펠러 샤프트(Propeller shaft)</li>
+                    <li>드라이브 샤프트(Drive shaft), 제동 캘리퍼(Braking caliper), 제동 디스크가 내장된 휠 허브(Wheel hub), 수상 추진축(Water jet
+                        shaft)</li>
+                    <li>30톤급 군용 차량용 더블 카단방식(Double Cardan type) 드라이브 샤프트</li>
+                    <li>5톤 지프용 더블 카단방식(Double Cardan type) 드라이브 샤프트</li>
+                    <li>고속철도차량(KTX)용 safety-set 내장형 트라이포드 구동축(Tripod shaft) 개발 및 국산화</li>
+                    <li>고속철도차량(KTX-산천)용 국내 고유 MSMF 내장형 트라이포드 구동축(Tripod shaft)</li>
+                    <li>건설장비(굴착기)용 더블 카단방식(Double Cardan type) 드라이브 샤프트</li>
+                    <li>국내 최고 권위의 한국기계연구원(KIMM) 신뢰성 시험설비 활용 신뢰성 평가 경험 보유</li>
+                    <li>국내 고속철도차량(KTX) 적용 안전 핵심 기술인 safety-set 설계 및 제작 기술 확보</li>
+                </ul>
+
+                <h3 class="devide-title">비전</h3>
+                <p class="devide-detail"> ㈜카템은 축적된 방산 및 동력전달 부품 기술력을 기반으로 국내외 방산 및 특수 차량용 핵심부품 시장을 선도하고,<br />
+                    국내외 고객에게 신뢰성 높은 제품을 제공함으로써 글로벌 Hidden Champion으로 도약하겠습니다.</p>
+            </div>
+
+            <div class="detail-report-container">
+                <div class="report-header">상세보기</div>
+                <div class="report-content">
+                    방산 분야는 최근 K-방산으로 대표되는 축적된 기술력을 바탕으로 한 대한민국의 핵심기술 분야로 국내. 외적으로 많은 주목을 받고 있고 국내 수출실적에도 괄목할 만한 성장세를
+                    유지하고 있으며 앞으로도 국제적 정세를 기반한 수요가 예측되어 지속적인 성장세가 예상되는 분야입니다.<br />
+                    ㈜카템은 오랫동안 방산 부품 분야의 원천기술을 확보하기 위해 노력해 왔습니다. 특히 육상방산용 차량부품 분야는 ㈜카템이 주목하고 있는 핵심분야로 상용차용 부품기술을 기반으로 한
+                    동력전달 및 제동용 부품의 설계, 제작, 평가 등 핵심부품의 연구개발에 많은 실적을 보유하고 있습니다.<br />
+                    ㈜카템은 육상방산용 차량 중 25톤급 전투차량 즉, 전투 장갑차용 동력전달용 부품인 프로펠러 샤프트(Propeller shaft), 드라이브 샤프트(Drive shaft), 제동
+                    캘리퍼(Braking caliper)와 제동 디스크(Braking disc)가 내장된 휠 허브(Wheel hub) 및 수상 추진축(Water jet shaft) 등의 핵심부품의
+                    연구개발(R&D) 및 양산 실적을 보유하고 있으며 또한 총 중량 30톤급 상용 차량용 드라이브 샤프트, 5톤 지프용 드라이브 샤프트를 설계에서부터 제작 및 시험평가까지 전체분야의
+                    원천기술을 확보하고 있으며 신뢰성 평가를 위한 국내 인프라(Infrastructure)를 확보하고 있습니다.<br />
+                    ㈜카템은 그동안 국내에서 수입품에 의존해 왔던 더블 카단방식(Double Cardan type)의 동력전달 축인 드라이브 샤프트(구동축)의 설계, 제작 및 시험평가에 특히 풍부한
+                    경험을 보유하고 있습니다. 국내 최고 권위의 한국기계연구원(KIMM)의 신뢰성 센터의 신뢰성 시험설비를 통하여 많은 제품의 신뢰성 시험 경험을 보유하고 있어 신뢰성 평가에 대한
+                    노하우(Knowhow)를 보유하고 있을 뿐만 아니라 기타 전북 및 울산 등의 자동차부품 혁신센터에서의 비틀림 내구성 시험을 진행한 실질적인 실적을 보유하고 있습니다. 특히 이러한
+                    기술력을 바탕으로 국내 고속철도차량(KTX)에도 적용되어 운용되고 있는 동력전달 축인 트라이포드 구동축(Tripod shaft)의 국산화 개발을 통하여 과도한 외부동력으로부터 내부
+                    핵심부품을 보호하기 위한 핵심기술인 safety-set 설계 및 제작 기술을 확보하고 이를 바탕으로 국내 한국철도기술연구원(KRRI)과의 공동연구를 통해 국내 고유
+                    safety-set 기능인 MSMF이라고 하는 다중 안전퓨즈를 개발한 특수한 경험도 보유하고 있습니다.<br />
+                    ● 25톤급 전투 차량(장갑차)용- 프로펠러 샤프트(Propeller shaft), 드라이브 샤프트(Drive shaft), 휠 허브(Wheel hub) 외<br />
+                    ● 30톤급 군용차량용 더블 카단방식(Double Cardan type)의 드라이브 샤프트(Drive shaft)<br />
+                    ● 5톤 지프용 더블 카단방식(Double Cardan type)의 드라이브 샤프트(Drive shaft)<br />
+                    ● 고속철도차량(KTX)용 safety-set 내장형 트라이포드 구동축(Tripod shaft)<br />
+                    ● 고속철도차량(KTX-산천)용 국내 고유 MSMF 내장형 트라이포드 구동축(Tripod shaft)<br />
+                    ● 건설장비(굴착기)용 더블 카단방식(Double Cardan type)의 드라이브 샤프트(Drive shaft)<br />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="footer-wrapper">
+                <ul class="footer-top-list">
+                    <li class="footer-top-list-item"><a href="/sub/etc/privacy.html">개인정보취급방침</a></li>
+                    <li class="footer-top-list-item"><a href="/sub/etc/email.html">이메일무단수집거부</a></li>
+                    <li class="footer-top-list-item"><a href="/sub/etc/sitemap.html">사이트맵</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer=bot">
+            <div class="footer-wrapper">
+                <div class="footer-logo"><img src="/assets/image/logo-c0.png" alt="카테 로고" /></div>
+                <ul class="footer-content">
+                    <li>본사 및 기술연구소 : 경남 창원시 의창구 차상로 182-30(팔용동)</li>
+                    <li>TEL : 055-287-8546 | FAX : 055-252-8547</li>
+                    <li>Copyright ⓒ 2025 KATEM. All right reserved.</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <button id="topBtn" title="맨 위로 이동">↑</button>
+    <script src="/scripts/header.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const reportBox = document.querySelector(".detail-report-container");
+            const header = reportBox.querySelector(".report-header");
+
+            header.addEventListener("click", () => {
+                reportBox.classList.toggle("active");
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

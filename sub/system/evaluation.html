@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KATEM - 동력전달용 부품 전문기업</title>
+
+    <link rel="icon" href="/favicon.ico">
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/sub.css">
+    <link rel="stylesheet" href="/css/variables.css">
+</head>
+
+<body>
+    <header id="header" class="sub">
+        <div class="header-top">
+            <div class="header-wrapper">
+                <a class="header-sitemap" href="/sub/etc/sitemap.html">三</a>
+                <div class="header-logo">
+                    <a href="/index.html"><img src="/assets/image/logo-c0.png" alt="카템 로고" /></a>
+                </div>
+                <div class="header-language-selector">
+                    <a href="/index.html" class="sel">KOR</a>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="/eng/index.html">ENG</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-bot">
+            <div class="header-wrapper">
+                <ul class="nav-main">
+                    <li class="nav-main-item"><a href="/sub/company/greeting.html">회사소개</a></li>
+                    <li class="nav-main-item"><a href="/sub/business/train.html">사업분야</a></li>
+                    <li class="nav-main-item"><a href="/sub/product/product1.html">제품소개</a></li>
+                    <li class="nav-main-item"><a href="/sub/management/quality.html">지속가능경영</a></li>
+                    <li class="nav-main-item"><a href="/sub/system/laboratory.html">R&D</a></li>
+                    <li class="nav-main-item"><a href="/sub/service/notice.html">고객센터</a></li>
+                </ul>
+                <ul class="nav-subs">
+                    <li class="nav-subs-item">
+                        <ul class="nav-subs-list">
+                            <li class="nav-subs-list-item"><a href="/sub/company/greeting.html">인사말</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/company/history.html">연혁</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/company/vision.html">비전 & 경영이념</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/company/ideal.html">인재상</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/company/organization.html">조직도</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-subs-item">
+                        <ul class="nav-subs-list">
+                            <li class="nav-subs-list-item"><a href="/sub/business/train.html">고속철도</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/business/defense.html">방산부품</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/business/construction.html">건설장비</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/business/vehicle.html">상용차</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-subs-item">
+                        <ul class="nav-subs-list">
+                            <li class="nav-subs-list-item"><a href="/sub/product/product1.html">제동디스크</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/product/product2.html">트리포드 구동축</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/product/product3.html">굴삭기용 구동축</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/product/product4.html">드라이브샤프트 류</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-subs-item">
+                        <ul class="nav-subs-list">
+                            <li class="nav-subs-list-item"><a href="/sub/management/quality.html">품질경영</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/management/ethic.html">윤리경영</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-subs-item">
+                        <ul class="nav-subs-list">
+                            <li class="nav-subs-list-item"><a href="/sub/system/laboratory.html">연구소 개요</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/system/analysis.html">해석</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/system/evaluation.html">신뢰성 평가</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/system/rnd.html">연구개발</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/system/license.html">특허</a></li>
+                        </ul>
+                    <li class="nav-subs-item">
+                        <ul class="nav-subs-list">
+                            <li class="nav-subs-list-item"><a href="/sub/service/notice.html">공지사항</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/service/product.html">제품문의</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <button id="mobile-menu-btn" aria-label="모바일 메뉴 열기">三</button>
+        <!-- 모바일 사이드 메뉴 -->
+        <nav id="mobile-side-menu" aria-hidden="true">
+            <div class="mobile-menu-header">
+                <a href="/index.html" class="mobile-logo">
+                    <img src="/assets/image/logo-c0.png" alt="카템 로고" />
+                </a>
+                <button id="mobile-menu-close-btn" aria-label="모바일 메뉴 닫기">&times;</button>
+            </div>
+
+            <div class="mobile-language-switcher">
+                <button class="lang-btn sel" data-lang="kor">KOR</button>
+                <button class="lang-btn" data-lang="eng">ENG</button>
+            </div>
+
+            <ul class="mobile-nav-main">
+                <li class="has-submenu">
+                    <button class="accordion-btn" aria-expanded="false">
+                        회사소개
+                        <span class="arrow"></span>
+                    </button>
+                    <ul class="submenu">
+                        <li><a href="/sub/company/greeting.html">인사말</a></li>
+                        <li><a href="/sub/company/history.html">연혁</a></li>
+                        <li><a href="/sub/company/vision.html">비전 & 경영이념</a></li>
+                        <li><a href="/sub/company/ideal.html">인재상</a></li>
+                        <li><a href="/sub/company/organization.html">조직도</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <button class="accordion-btn" aria-expanded="false">
+                        사업분야
+                        <span class="arrow"></span>
+                    </button>
+                    <ul class="submenu">
+                        <li><a href="/sub/business/train.html">고속철도</a></li>
+                        <li><a href="/sub/business/defense.html">방산부품</a></li>
+                        <li><a href="/sub/business/construction.html">건설장비</a></li>
+                        <li><a href="/sub/business/vehicle.html">상용차</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <button class="accordion-btn" aria-expanded="false">
+                        제품소개
+                        <span class="arrow"></span>
+                    </button>
+                    <ul class="submenu">
+                        <li><a href="/sub/product/product1.html">제동디스크</a></li>
+                        <li><a href="/sub/product/product2.html">트리포드 구동축</a></li>
+                        <li><a href="/sub/product/product3.html">굴삭기용 구동축</a></li>
+                        <li><a href="/sub/product/product4.html">드라이브샤프트 류</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <button class="accordion-btn" aria-expanded="false">
+                        지속가능경영
+                        <span class="arrow"></span>
+                    </button>
+                    <ul class="submenu">
+                        <li><a href="/sub/management/quality.html">품질경영</a></li>
+                        <li><a href="/sub/management/ethic.html">윤리경영</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <button class="accordion-btn" aria-expanded="false">
+                        R&D
+                        <span class="arrow"></span>
+                    </button>
+                    <ul class="submenu">
+                        <li><a href="/sub/system/laboratory.html">연구소 개요</a></li>
+                        <li><a href="/sub/system/analysis.html">해석</a></li>
+                        <li><a href="/sub/system/evaluation.html">신뢰성 평가</a></li>
+                        <li><a href="/sub/system/rnd.html">연구개발</a></li>
+                        <li><a href="/sub/system/license.html">특허</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-submenu">
+                    <button class="accordion-btn" aria-expanded="false">
+                        고객센터
+                        <span class="arrow"></span>
+                    </button>
+                    <ul class="submenu">
+                        <li><a href="/sub/service/notice.html">공지사항</a></li>
+                        <li><a href="/sub/service/product.html">제품문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="sub-content-header system">
+        <div class="sub-content-title">신뢰성 평가</div>
+        <div class="sub-content-detail">
+            엄격한 시험·평가를 통해<br />
+            <b>KATEM</b>의 기술 신뢰성을 입증합니다
+        </div>
+    </div>
+    <div class="sub-nav">
+        <ul class="nav-list">
+            <li class="nav-list-item">
+                <a href="/sub/system/laboratory.html">연구소 개요</a>
+            </li>
+            <li class="nav-list-item">
+                <a href="/sub/system/analysis.html">해석</a>
+            </li>
+            <li class="nav-list-item">
+                <b>신뢰성 평가</b>
+            </li>
+            <li class="nav-list-item">
+                <a href="/sub/system/rnd.html">연구개발</a>
+            </li>
+            <li class="nav-list-item">
+                <a href="/sub/system/license.html">특허</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="sub-content-container">
+        <div class="sub-content-main system">
+            <div class="section-devider">
+                <div class="sel tab-btn" data-target="vehicle-section">상용차용 동력전달 구동축류</div>
+                <div class="tab-btn" data-target="train-section">철도차량용 브레이크 디스크</div>
+            </div>
+            <div class="devide-section-container">
+                <div class="vehicle-section tab-content active">
+                    <h3 class="devide-title">시험평가 규격</h3>
+                    <ul class="devide-detail">
+                        <li>RS-KIMM-2010-0082_특수차량용 동력전달축</li>
+                        <li>RS-KIMM-2011-0134_대형 특수차량용 조향 구동축</li>
+                        <li>RS-KORAS-KIMM-270(2019)_고속철도용 동력전달 축</li>
+                    </ul>
+                    <h3 class="devide-title">시험평가 항목</h3>
+                    <ul class="devide-detail">
+                        <li>언밸런스 시험</li>
+                        <li>비틀림 굽힘각도 시험</li>
+                        <li>비틀림 최대회전수 시험</li>
+                        <li>비틀림 파단시험</li>
+                        <li>비틀림 내구성시험</li>
+                        <li>가속수명시험</li>
+                    </ul>
+                    <h3 class="devide-title">시험평가 자료</h3>
+                    <div class="photo-guider-container">
+                        <div class="photo-guider">
+                            <h4 class="photo-guider-title">동력전달축 언밸런스 시험</h4>
+                            <div class="tech-guide-images two">
+                                <div class="tech-guide-imgbox">
+                                    <img src="/assets/image/sub/system/evaluation-01-01-01.png" alt="동력전달축 언밸런스 시험 1">
+                                    <div class="tech-guide-caption">
+                                        <div class="tech-guide-number">i</div>
+                                        <div class="tech-guide-detail">동력전달축 언밸런스 시험 [I]</div>
+                                    </div>
+                                </div>
+                                <div class="tech-guide-imgbox">
+                                    <img src="/assets/image/sub/system/evaluation-01-01-02.png" alt="동력전달축 언밸런스 시험 2">
+                                    <div class="tech-guide-caption">
+                                        <div class="tech-guide-number">i</div>
+                                        <div class="tech-guide-detail">동력전달축 언밸런스 시험 [II]</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photo-guider">
+                            <h4 class="photo-guider-title">동력전달축 비틀림 파단시험</h4>
+                            <div class="tech-guide-images four">
+                                <div class="tech-guide-imgbox">
+                                    <img src="/assets/image/sub/system/evaluation-01-02-01.png" alt="비틀림 파단시험 실시 장면">
+                                    <div class="tech-guide-caption">
+                                        <div class="tech-guide-number">i</div>
+                                        <div class="tech-guide-detail">비틀림 파단시험 실시 장면</div>
+                                    </div>
+                                </div>
+                                <div class="tech-guide-imgbox">
+                                    <img src="/assets/image/sub/system/evaluation-01-02-03.png"
+                                        alt="시험 전(좌) 및 시험 후(우) 파단 양상">
+                                    <div class="tech-guide-caption">
+                                        <div class="tech-guide-number">i</div>
+                                        <div class="tech-guide-detail">시험 전(좌) 및 시험 후(우) 파단 양상</div>
+                                    </div>
+                                </div>
+                                <div class="tech-guide-imgbox">
+                                    <img src="/assets/image/sub/system/evaluation-01-02-02.png" alt="시험그래프(38.8kNm)">
+                                    <div class="tech-guide-caption">
+                                        <div class="tech-guide-number">i</div>
+                                        <div class="tech-guide-detail">시험그래프(38.8kNm)</div>
+                                    </div>
+                                </div>
+                                <div class="tech-guide-imgbox">
+                                    <img src="/assets/image/sub/system/evaluation-01-02-04.png" alt="시험그래프 (42.4kNm)">
+                                    <div class="tech-guide-caption">
+                                        <div class="tech-guide-number">i</div>
+                                        <div class="tech-guide-detail">시험그래프 (42.4kNm)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photo-guider">
+                            <h4 class="photo-guider-title">동력전달축 비틀림 내구성시험</h4>
+                            <div class="tech-guide-images four">
+                                <div class="tech-guide-imgbox">
+                                    <img src="/assets/image/sub/system/evaluation-01-03-01.png" alt="비틀림 피로시험시험 실시 장면">
+                                    <div class="tech-guide-caption">
+                                        <div class="tech-guide-number">i</div>
+                                        <div class="tech-guide-detail">비틀림 피로시험시험 실시 장면</div>
+                                    </div>
+                                </div>
+                                <div class="tech-guide-imgbox">
+                                    <img src="/assets/image/sub/system/evaluation-01-03-02.png"
+                                        alt="시험 전(좌) 및 시험 후(우) 파단 양상">
+                                    <div class="tech-guide-caption">
+                                        <div class="tech-guide-number">i</div>
+                                        <div class="tech-guide-detail">시험 전(좌) 및 시험 후(우) 파단 양상</div>
+                                    </div>
+                                </div>
+                                <div class="tech-guide-imgbox">
+                                    <img src="/assets/image/sub/system/evaluation-01-03-03.png"
+                                        alt="시험그래프(401,000cycle)">
+                                    <div class="tech-guide-caption">
+                                        <div class="tech-guide-number">i</div>
+                                        <div class="tech-guide-detail">시험그래프(401,000cycle)</div>
+                                    </div>
+                                </div>
+                                <div class="tech-guide-imgbox">
+                                    <img src="/assets/image/sub/system/evaluation-01-03-04.png"
+                                        alt="시험그래프(102,900cycle)">
+                                    <div class="tech-guide-caption">
+                                        <div class="tech-guide-number">i</div>
+                                        <div class="tech-guide-detail">시험그래프(102,900cycle)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photo-guider">
+                            <h4 class="photo-guider-title">동력전달축 가속수명시험</h4>
+                            <div class="tech-guide-images two">
+                                <div class="tech-guide-imgbox">
+                                    <img src="/assets/image/sub/system/evaluation-01-04-01.png" alt="동력전달축 가속수명시험 시험 1">
+                                    <div class="tech-guide-caption">
+                                        <div class="tech-guide-number">i</div>
+                                        <div class="tech-guide-detail">동력전달축 가속수명시험 시험 [I]</div>
+                                    </div>
+                                </div>
+                                <div class="tech-guide-imgbox">
+                                    <img src="/assets/image/sub/system/evaluation-01-04-02.png" alt="동력전달축 가속수명시험 시험 2">
+                                    <div class="tech-guide-caption">
+                                        <div class="tech-guide-number">i</div>
+                                        <div class="tech-guide-detail">동력전달축 가속수명시험 시험 [II]</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="train-section tab-content">
+                    <h3 class="devide-title">시험평가 규격</h3>
+                    <ul class="devide-detail">
+                        <li>UIC 541-3 8thed_Brakes-Disc brakes and their application-General conditions for the
+                            certifi
+                            cation of brake pads</li>
+                        <li>EN 14535-3 Railway Applications-Brake Discs for Railway Rolling Stock Part.3 (2016)</li>
+                    </ul>
+                    <h3 class="devide-title">시험평가 항목</h3>
+                    <ul class="devide-detail">
+                        <li>성능 및 내구성시험 (Performance and Endurance Test)</li>
+                        <li>원심성시험 (Centrifugal Test)</li>
+                        <li>열발산시험 (Heat Dissipation Test)</li>
+                        <li>공기저항시험 (Ventilation Test)</li>
+                    </ul>
+                    <h3 class="devide-title">시험 평가자료</h3>
+                    <div class="sub-certificate-container">
+                        <div class="photo-guider-container">
+                            <div class="photo-guider">
+                                <h4 class="photo-guider-title">디스크 밸런스 시험</h4>
+                                <div class="tech-guide-images two">
+                                    <div class="tech-guide-imgbox">
+                                        <img src="/assets/image/sub/system/evaluation-02-01-01.png"
+                                            alt="단조강 디스크 밸런스시험">
+                                        <div class="tech-guide-caption">
+                                            <div class="tech-guide-number">i</div>
+                                            <div class="tech-guide-detail">단조강 디스크 밸런스시험</div>
+                                        </div>
+                                    </div>
+                                    <div class="tech-guide-imgbox">
+                                        <img src="/assets/image/sub/system/evaluation-02-01-02.png"
+                                            alt="주조강 디스크 밸런스시험">
+                                        <div class="tech-guide-caption">
+                                            <div class="tech-guide-number">i</div>
+                                            <div class="tech-guide-detail">주조강 디스크 밸런스시험</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="footer-wrapper">
+                <ul class="footer-top-list">
+                    <li class="footer-top-list-item"><a href="/sub/etc/privacy.html">개인정보취급방침</a></li>
+                    <li class="footer-top-list-item"><a href="/sub/etc/email.html">이메일무단수집거부</a></li>
+                    <li class="footer-top-list-item"><a href="/sub/etc/sitemap.html">사이트맵</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer=bot">
+            <div class="footer-wrapper">
+                <div class="footer-logo"><img src="/assets/image/logo-c0.png" alt="카테 로고" /></div>
+                <ul class="footer-content">
+                    <li>본사 및 기술연구소 : 경남 창원시 의창구 차상로 182-30(팔용동)</li>
+                    <li>TEL : 055-287-8546 | FAX : 055-252-8547</li>
+                    <li>Copyright ⓒ 2025 KATEM. All right reserved.</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <button id="topBtn" title="맨 위로 이동">↑</button>
+    <script src="/scripts/header.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll('.section-devider .tab-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.section-devider .tab-btn').forEach(b => b.classList.remove('sel'));
+                    btn.classList.add('sel');
+
+                    document.querySelectorAll('.devide-section-container .tab-content').forEach(sec => sec.classList.remove('active'));
+
+                    const target = btn.getAttribute('data-target');
+                    document.querySelector('.' + target).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

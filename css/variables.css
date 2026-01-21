@@ -1,0 +1,96 @@
+:root {
+    /* ===============================
+     Primary Color (Blue)
+     depth-1 : 가장 연함 (bg)
+     depth-5 : 가장 진함 (strong)
+    =============================== */
+
+    --primary-1: #E6F4FD;
+    --primary-2: #B3E1FA;
+    --primary-3: #66C2F2;
+    --primary-4: #0199EF;
+    --primary-5: #0067B8;
+
+    /* ===============================
+     Secondary Color (Green)
+    `=============================== */
+
+    --secondary-1: #F0FAEE;
+    --secondary-2: #D6F0D2;
+    --secondary-3: #A8D5BA;
+    --secondary-4: #4ABC33;
+    --secondary-5: #2E8B1F;
+
+    /* ===============================
+       Neutral Colors
+    =============================== */
+    
+    /* Black scale */
+    --black-1: #111111; /* main text */
+    --black-2: #222222;
+    --black-3: #333333;
+    --black-4: #555555;
+    --black-5: #777777; /* muted text */
+    
+    /* White scale */
+    --white-1: #FFFFFF; /* pure white */
+    --white-2: #FAFAFA;
+    --white-3: #F5F5F5;
+    --white-4: #EEEEEE;
+    --white-5: #E5E5E5; /* border / bg */
+
+    /* ===============================
+     Spacing (Margin / Padding)
+    =============================== */
+
+    --space-1: 0.25rem; /* 4px */
+    --space-2: 0.5rem;  /* 8px */
+    --space-3: 1rem;    /* 16px */
+    --space-4: 1.5rem;  /* 24px */
+    --space-5: 2rem;    /* 32px */
+    --space-6: 3rem;    /* 48px */
+    --space-7: 4rem;    /* 64px */
+
+    /* ===============================
+     Border Radius
+    =============================== */
+
+    --radius-1: 4px;
+    /* input, tag */
+    --radius-2: 8px;
+    /* button, card */
+    --radius-3: 12px;
+    /* modal */
+    --radius-4: 16px;
+    /* hero, large box */
+    --radius-round: 999px;
+    /* pill */
+
+    /* ===============================
+       Font Size Scale (rem)
+    =============================== */
+
+    --font-xs: 0.75rem;   /* 12px - helper, badge */
+    --font-sm: 0.875rem;  /* 14px - caption */
+    --font-md: 1rem;      /* 16px - body */
+    --font-lg: 1.125rem;  /* 18px - emphasized text */
+    --font-xl: 1.25rem;   /* 20px - section title */
+    --font-2xl: 1.5rem;   /* 24px - h3 */
+    --font-3xl: 2rem;     /* 32px - h2 */
+    --font-4xl: 2.5rem;   /* 40px - hero title */
+
+    /* ===============================
+       Line Height
+    =============================== */
+
+    --leading-tight: 1.2;
+    --leading-normal: 1.5;
+    --leading-relaxed: 1.75;
+
+    /* == 공통 폰트 == */
+    --font-family: 'NanumSquare', sans-serif;
+    /*-== 페이퍼 폰트 == */
+    --font-paper-regular: 'Paperlogy-Regular';
+    --font-paper-semi-bold: 'Paperlogy-SemiBold';
+    --font-paper-extra-bold: 'Paperlogy-ExtraBold';
+}

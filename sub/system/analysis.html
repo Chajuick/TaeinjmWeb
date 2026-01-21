@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KATEM - 동력전달용 부품 전문기업</title>
+
+    <link rel="icon" href="/favicon.ico">
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/sub.css">
+    <link rel="stylesheet" href="/css/variables.css">
+</head>
+
+<body>
+    <header id="header" class="sub">
+        <div class="header-top">
+            <div class="header-wrapper">
+                <a class="header-sitemap" href="/sub/etc/sitemap.html">三</a>
+                <div class="header-logo">
+                    <a href="/index.html"><img src="/assets/image/logo-c0.png" alt="카템 로고" /></a>
+                </div>
+                <div class="header-language-selector">
+                    <a href="/index.html" class="sel">KOR</a>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="/eng/index.html">ENG</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-bot">
+            <div class="header-wrapper">
+                <ul class="nav-main">
+                    <li class="nav-main-item"><a href="/sub/company/greeting.html">회사소개</a></li>
+                    <li class="nav-main-item"><a href="/sub/business/train.html">사업분야</a></li>
+                    <li class="nav-main-item"><a href="/sub/product/product1.html">제품소개</a></li>
+                    <li class="nav-main-item"><a href="/sub/management/quality.html">지속가능경영</a></li>
+                    <li class="nav-main-item"><a href="/sub/system/laboratory.html">R&D</a></li>
+                    <li class="nav-main-item"><a href="/sub/service/notice.html">고객센터</a></li>
+                </ul>
+                <ul class="nav-subs">
+                    <li class="nav-subs-item">
+                        <ul class="nav-subs-list">
+                            <li class="nav-subs-list-item"><a href="/sub/company/greeting.html">인사말</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/company/history.html">연혁</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/company/vision.html">비전 & 경영이념</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/company/ideal.html">인재상</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/company/organization.html">조직도</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-subs-item">
+                        <ul class="nav-subs-list">
+                            <li class="nav-subs-list-item"><a href="/sub/business/train.html">고속철도</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/business/defense.html">방산부품</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/business/construction.html">건설장비</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/business/vehicle.html">상용차</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-subs-item">
+                        <ul class="nav-subs-list">
+                            <li class="nav-subs-list-item"><a href="/sub/product/product1.html">제동디스크</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/product/product2.html">트리포드 구동축</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/product/product3.html">굴삭기용 구동축</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/product/product4.html">드라이브샤프트 류</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-subs-item">
+                        <ul class="nav-subs-list">
+                            <li class="nav-subs-list-item"><a href="/sub/management/quality.html">품질경영</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/management/ethic.html">윤리경영</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-subs-item">
+                        <ul class="nav-subs-list">
+                            <li class="nav-subs-list-item"><a href="/sub/system/laboratory.html">연구소 개요</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/system/analysis.html">해석</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/system/evaluation.html">신뢰성 평가</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/system/rnd.html">연구개발</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/system/license.html">특허</a></li>
+                        </ul>
+                    <li class="nav-subs-item">
+                        <ul class="nav-subs-list">
+                            <li class="nav-subs-list-item"><a href="/sub/service/notice.html">공지사항</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/service/product.html">제품문의</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <button id="mobile-menu-btn" aria-label="모바일 메뉴 열기">三</button>
+        <!-- 모바일 사이드 메뉴 -->
+        <nav id="mobile-side-menu" aria-hidden="true">
+            <div class="mobile-menu-header">
+                <a href="/index.html" class="mobile-logo">
+                    <img src="/assets/image/logo-c0.png" alt="카템 로고" />
+                </a>
+                <button id="mobile-menu-close-btn" aria-label="모바일 메뉴 닫기">&times;</button>
+            </div>
+
+            <div class="mobile-language-switcher">
+                <button class="lang-btn sel" data-lang="kor">KOR</button>
+                <button class="lang-btn" data-lang="eng">ENG</button>
+            </div>
+
+            <ul class="mobile-nav-main">
+                <li class="has-submenu">
+                    <button class="accordion-btn" aria-expanded="false">
+                        회사소개
+                        <span class="arrow"></span>
+                    </button>
+                    <ul class="submenu">
+                        <li><a href="/sub/company/greeting.html">인사말</a></li>
+                        <li><a href="/sub/company/history.html">연혁</a></li>
+                        <li><a href="/sub/company/vision.html">비전 & 경영이념</a></li>
+                        <li><a href="/sub/company/ideal.html">인재상</a></li>
+                        <li><a href="/sub/company/organization.html">조직도</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <button class="accordion-btn" aria-expanded="false">
+                        사업분야
+                        <span class="arrow"></span>
+                    </button>
+                    <ul class="submenu">
+                        <li><a href="/sub/business/train.html">고속철도</a></li>
+                        <li><a href="/sub/business/defense.html">방산부품</a></li>
+                        <li><a href="/sub/business/construction.html">건설장비</a></li>
+                        <li><a href="/sub/business/vehicle.html">상용차</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <button class="accordion-btn" aria-expanded="false">
+                        제품소개
+                        <span class="arrow"></span>
+                    </button>
+                    <ul class="submenu">
+                        <li><a href="/sub/product/product1.html">제동디스크</a></li>
+                        <li><a href="/sub/product/product2.html">트리포드 구동축</a></li>
+                        <li><a href="/sub/product/product3.html">굴삭기용 구동축</a></li>
+                        <li><a href="/sub/product/product4.html">드라이브샤프트 류</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <button class="accordion-btn" aria-expanded="false">
+                        지속가능경영
+                        <span class="arrow"></span>
+                    </button>
+                    <ul class="submenu">
+                        <li><a href="/sub/management/quality.html">품질경영</a></li>
+                        <li><a href="/sub/management/ethic.html">윤리경영</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <button class="accordion-btn" aria-expanded="false">
+                        R&D
+                        <span class="arrow"></span>
+                    </button>
+                    <ul class="submenu">
+                        <li><a href="/sub/system/laboratory.html">연구소 개요</a></li>
+                        <li><a href="/sub/system/analysis.html">해석</a></li>
+                        <li><a href="/sub/system/evaluation.html">신뢰성 평가</a></li>
+                        <li><a href="/sub/system/rnd.html">연구개발</a></li>
+                        <li><a href="/sub/system/license.html">특허</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-submenu">
+                    <button class="accordion-btn" aria-expanded="false">
+                        고객센터
+                        <span class="arrow"></span>
+                    </button>
+                    <ul class="submenu">
+                        <li><a href="/sub/service/notice.html">공지사항</a></li>
+                        <li><a href="/sub/service/product.html">제품문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="sub-content-header system">
+        <div class="sub-content-title">해석</div>
+        <div class="sub-content-detail">
+            첨단 해석 기술을 기반으로<br />
+            <b>KATEM</b>의 신뢰성을 검증합니다
+        </div>
+    </div>
+    <div class="sub-nav">
+        <ul class="nav-list">
+            <li class="nav-list-item">
+                <a href="/sub/system/laboratory.html">연구소 개요</a>
+            </li>
+            <li class="nav-list-item">
+                <b>해석</b>
+            </li>
+            <li class="nav-list-item">
+                <a href="/sub/system/evaluation.html">신뢰성 평가</a>
+            </li>
+            <li class="nav-list-item">
+                <a href="/sub/system/rnd.html">연구개발</a>
+            </li>
+            <li class="nav-list-item">
+                <a href="/sub/system/license.html">특허</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="sub-content-container">
+        <div class="sub-content-main system">
+            <div class="management-container">
+                <div class="section-devider first">
+                    <div class="sel tab-btn" data-target="cardan-section">14톤 굴착기용 구동축 해석</div>
+                    <div class="tab-btn" data-target="ktx-san-section">KTX-산천 브레이크 디스크 해석</div>
+                </div>
+                <div class="section-devider">
+                    <div class="tab-btn" data-target="ktx-disc-section">KTX 디스크 구조강도 해석</div>
+                    <div class="tab-btn" data-target="brake-section">고속철도용 브레이크 디스크 해석</div>
+                </div>
+            </div>
+            <div class="devide-section-container">
+                <div class="cardan-section tab-content active">
+                    <div class="devide-subs">
+                        <h3>NG ▶ 커플링 요크의 최대응력 감소방안에 대한 응력 해석 결과</h3>
+                        <p>재질 : SCM420H ▶ 인장강도 , 100kgf/mm2</p>
+                    </div>
+                    <section class="lab-overview__section" aria-labelledby="lab-foundation-title">
+                        <ul class="info-list">
+                            <li>
+                                <span class="info-label">작용토크</span>
+                                <span class="info-value">224.6 kgf m</span>
+                            </li>
+                            <li>
+                                <span class="info-label">커플링요크 최대응력</span>
+                                <span class="info-value">147 kgf/mm2</span>
+                            </li>
+                            <li>
+                                <span class="info-label">크로스 최대응력</span>
+                                <span class="info-value">96.4 kgf/mm2</span>
+                            </li>
+                            <li>
+                                <span class="info-label">축(L) 최대응력</span>
+                                <span class="info-value">98.6 kgf/mm2</span>
+                            </li>
+                            <li>
+                                <span class="info-label">축(S) 최대응력</span>
+                                <span class="info-value">124 kgf/mm2</span>
+                            </li>
+                        </ul>
+                    </section>
+                    <div class="additional-contents">
+                        <span>* 축(L) ; SLIP YOKE INPUT SHAFT</span>
+                        <span>* 축(S) ; SLIP YOKE OUTPUT SHAFT</span>
+                    </div>
+                    <h3 class="devide-title">구조강도해석</h3>
+                    <div class="photo-guider-container">
+                        <div class="photo-guider">
+                            <h4 class="photo-guider-title">더블카단조인트 드라이브샤프트</h4>
+                            <div class="tech-guide-images one">
+                                <div class="tech-guide-imgbox">
+                                    <img src="/assets/image/sub/system/analysis-01-01-01.png" alt="더블카단조인트 드라이브샤프트">
+                                    <div class="tech-guide-caption">
+                                        <div class="tech-guide-number">i</div>
+                                        <div class="tech-guide-detail">더블카단조인트 드라이브샤프트</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photo-guider half">
+                            <h4 class="photo-guider-title">COUPLING YOKE</h4>
+                            <div class="tech-guide-images two">
+                                <div class="tech-guide-imgbox">
+                                    <img src="/assets/image/sub/system/analysis-01-02-01.png" alt="COUPLING YOKE">
+                                    <div class="tech-guide-caption">
+                                        <div class="tech-guide-number">i</div>
+                                        <div class="tech-guide-detail">COUPLING YOKE [I]</div>
+                                    </div>
+                                </div>
+                                <div class="tech-guide-imgbox">
+                                    <img src="/assets/image/sub/system/analysis-01-02-02.png" alt="COUPLING YOKE">
+                                    <div class="tech-guide-caption">
+                                        <div class="tech-guide-number">i</div>
+                                        <div class="tech-guide-detail">COUPLING YOKE [II]</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photo-guider half">
+                            <h4 class="photo-guider-title">CROSS</h4>
+                            <div class="tech-guide-images two">
+                                <div class="tech-guide-imgbox">
+                                    <img src="/assets/image/sub/system/analysis-01-03-01.png" alt="CROSS">
+                                    <div class="tech-guide-caption">
+                                        <div class="tech-guide-number">i</div>
+                                        <div class="tech-guide-detail">CROSS [I]</div>
+                                    </div>
+                                </div>
+                                <div class="tech-guide-imgbox">
+                                    <img src="/assets/image/sub/system/analysis-01-03-02.png" alt="CROSS">
+                                    <div class="tech-guide-caption">
+                                        <div class="tech-guide-number">i</div>
+                                        <div class="tech-guide-detail">CROSS [II]</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photo-guider half">
+                            <h4 class="photo-guider-title">SLIP YOKE INPUT SHAFT</h4>
+                            <div class="tech-guide-images two">
+                                <div class="tech-guide-imgbox">
+                                    <img src="/assets/image/sub/system/analysis-01-04-01.png"
+                                        alt="SLIP YOKE INPUT SHAFT">
+                                    <div class="tech-guide-caption">
+                                        <div class="tech-guide-number">i</div>
+                                        <div class="tech-guide-detail">SLIP YOKE INPUT SHAFT [I]</div>
+                                    </div>
+                                </div>
+                                <div class="tech-guide-imgbox">
+                                    <img src="/assets/image/sub/system/analysis-01-04-02.png"
+                                        alt="SLIP YOKE INPUT SHAFT">
+                                    <div class="tech-guide-caption">
+                                        <div class="tech-guide-number">i</div>
+                                        <div class="tech-guide-detail">SLIP YOKE INPUT SHAFT [II]</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photo-guider half">
+                            <h4 class="photo-guider-title">SLIP YOKE OUTPUT SHAFT</h4>
+                            <div class="tech-guide-images two">
+                                <div class="tech-guide-imgbox">
+                                    <img src="/assets/image/sub/system/analysis-01-05-01.png"
+                                        alt="SLIP YOKE OUTPUT SHAFT">
+                                    <div class="tech-guide-caption">
+                                        <div class="tech-guide-number">i</div>
+                                        <div class="tech-guide-detail">SLIP YOKE OUTPUT SHAFT [I]</div>
+                                    </div>
+                                </div>
+                                <div class="tech-guide-imgbox">
+                                    <img src="/assets/image/sub/system/analysis-01-05-02.png"
+                                        alt="SLIP YOKE OUTPUT SHAFT">
+                                    <div class="tech-guide-caption">
+                                        <div class="tech-guide-number">i</div>
+                                        <div class="tech-guide-detail">SLIP YOKE OUTPUT SHAFT [II]</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ktx-san-section tab-content">
+                    <h3 class="devide-title">KTX-산천 브레이크 디스크 해석자료</h3>
+                    <div class="photo-guider-container">
+                        <div class="photo-guider">
+                            <h4 class="photo-guider-title">구조강도 해석</h4>
+                            <div class="tech-guide-images four">
+                                <div class="tech-guide-imgbox">
+                                    <img src="/assets/image/sub/system/analysis-02-01-01.png"
+                                        alt="KTX-산천 브레이크 디스크 구조강도 해석">
+                                    <div class="tech-guide-caption">
+                                        <div class="tech-guide-number">i</div>
+                                        <div class="tech-guide-detail">구조강도 해석 [I]</div>
+                                    </div>
+                                </div>
+                                <div class="tech-guide-imgbox">
+                                    <img src="/assets/image/sub/system/analysis-02-01-02.png"
+                                        alt="KTX-산천 브레이크 디스크 구조강도 해석">
+                                    <div class="tech-guide-caption">
+                                        <div class="tech-guide-number">i</div>
+                                        <div class="tech-guide-detail">구조강도 해석 [II]</div>
+                                    </div>
+                                </div>
+                                <div class="tech-guide-imgbox">
+                                    <img src="/assets/image/sub/system/analysis-02-01-03.png"
+                                        alt="KTX-산천 브레이크 디스크 구조강도 해석">
+                                    <div class="tech-guide-caption">
+                                        <div class="tech-guide-number">i</div>
+                                        <div class="tech-guide-detail">구조강도 해석 [III]</div>
+                                    </div>
+                                </div>
+                                <div class="tech-guide-imgbox">
+                                    <img src="/assets/image/sub/system/analysis-02-01-04.png"
+                                        alt="KTX-산천 브레이크 디스크 구조강도 해석">
+                                    <div class="tech-guide-caption">
+                                        <div class="tech-guide-number">i</div>
+                                        <div class="tech-guide-detail">구조강도 해석 [IV]</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photo-guider">
+                            <h4 class="photo-guider-title">고유모드 해석</h4>
+                            <div class="tech-guide-images one">
+                                <div class="tech-guide-imgbox">
+                                    <img src="/assets/image/sub/system/analysis-02-02-01.png"
+                                        alt="KTX-산천 브레이크 디스크의 고유모드 해석">
+                                    <div class="tech-guide-caption">
+                                        <div class="tech-guide-number">i</div>
+                                        <div class="tech-guide-detail">고유모드 해석</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photo-guider half">
+                            <h4 class="photo-guider-title">열응력 해석</h4>
+                            <div class="tech-guide-images two">
+                                <div class="tech-guide-imgbox">
+                                    <img src="/assets/image/sub/system/analysis-02-03-01.png" alt="Disk - Stress (MPa)">
+                                    <div class="tech-guide-caption">
+                                        <div class="tech-guide-number">i</div>
+                                        <div class="tech-guide-detail">Disk - Stress (MPa)</div>
+                                    </div>
+                                </div>
+                                <div class="tech-guide-imgbox">
+                                    <img src="/assets/image/sub/system/analysis-02-03-02.png" alt="Hub - Stress (MPa)">
+                                    <div class="tech-guide-caption">
+                                        <div class="tech-guide-number">i</div>
+                                        <div class="tech-guide-detail">Hub - Stress (MPa)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ktx-disc-section tab-content">
+                    <h3 class="devide-title">구조강도 해석</h3>
+                    <div class="photo-guider-container">
+                        <div class="photo-guider">
+                            <div class="tech-guide-images one">
+                                <div class="tech-guide-imgbox larger">
+                                    <img src="/assets/image/sub/system/analysis-03-01-01.png"
+                                        alt="KTX-산천 브레이크 디스크 구조강도 해석">
+                                    <div class="tech-guide-caption">
+                                        <div class="tech-guide-number">i</div>
+                                        <div class="tech-guide-detail">구조강도 해석</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="devide-title">고유모드 해석</h3>
+                    <div class="photo-grid-container">
+                        <div class="photo-grid">
+                            <div class="photo-card">
+                                <div class="photo-card-title">1ST MODE</div>
+                                <img src="/assets/image/sub/system/analysis-03-02-01.png" alt="Mode 1 Image"
+                                    class="photo-card-image">
+                                <div class="photo-card-frequency">337.77 Hz</div>
+                            </div>
+                            <div class="photo-card">
+                                <div class="photo-card-title">2ND MODE</div>
+                                <img src="/assets/image/sub/system/analysis-03-02-02.png" alt="Mode 2 Image"
+                                    class="photo-card-image">
+                                <div class="photo-card-frequency">337.82 Hz</div>
+                            </div>
+                            <div class="photo-card">
+                                <div class="photo-card-title">3RD MODE</div>
+                                <img src="/assets/image/sub/system/analysis-03-02-03.png" alt="Mode 3 Image"
+                                    class="photo-card-image">
+                                <div class="photo-card-frequency">424.64 Hz</div>
+                            </div>
+                            <div class="photo-card">
+                                <div class="photo-card-title">4TH MODE</div>
+                                <img src="/assets/image/sub/system/analysis-03-02-04.png" alt="Mode 4 Image"
+                                    class="photo-card-image">
+                                <div class="photo-card-frequency">512.34 Hz</div>
+                            </div>
+                            <div class="photo-card">
+                                <div class="photo-card-title">5TH MODE</div>
+                                <img src="/assets/image/sub/system/analysis-03-02-05.png" alt="Mode 5 Image"
+                                    class="photo-card-image">
+                                <div class="photo-card-frequency">512.36 Hz</div>
+                            </div>
+                            <div class="photo-card">
+                                <div class="photo-card-title">6TH MODE</div>
+                                <img src="/assets/image/sub/system/analysis-03-02-06.png" alt="Mode 6 Image"
+                                    class="photo-card-image">
+                                <div class="photo-card-frequency">523.57 Hz</div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="devide-title">열전달 해석</h3>
+                    <div class="photo-grid-container">
+                        <div class="photo-grid">
+                            <div class="photo-card">
+                                <div class="photo-card-title">6.21 sec</div>
+                                <img src="/assets/image/sub/system/analysis-03-03-01.png" alt="6.21 sec Image"
+                                    class="photo-card-image">
+                            </div>
+                            <div class="photo-card">
+                                <div class="photo-card-title">64.00 sec</div>
+                                <img src="/assets/image/sub/system/analysis-03-03-02.png" alt="64.00 sec Image"
+                                    class="photo-card-image">
+                            </div>
+                            <div class="photo-card">
+                                <div class="photo-card-title">131.9 sec</div>
+                                <img src="/assets/image/sub/system/analysis-03-03-03.png" alt="131.9 sec Image"
+                                    class="photo-card-image">
+                            </div>
+                            <div class="photo-card">
+                                <div class="photo-card-title">490 sec</div>
+                                <img src="/assets/image/sub/system/analysis-03-03-04.png" alt="490 sec Image"
+                                    class="photo-card-image">
+                            </div>
+                            <div class="photo-card">
+                                <div class="photo-card-title">1,290 sec</div>
+                                <img src="/assets/image/sub/system/analysis-03-03-05.png" alt="1,290 sec Image"
+                                    class="photo-card-image">
+                            </div>
+                            <div class="photo-card">
+                                <div class="photo-card-title">1,990 sec</div>
+                                <img src="/assets/image/sub/system/analysis-03-03-06.png" alt="1,990 sec Image"
+                                    class="photo-card-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="brake-section tab-content">
+                    <h3 class="devide-title">열유동 해석</h3>                    
+                    <table class="photo-table">
+                        <thead>
+                            <tr>
+                                <th>상태</th>
+                                <th>최대 온도</th>
+                                <th>제동 종료시</th>
+                                <th>상온 도달시</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="row-title">기존 모델</td>
+                                <td data-label="최대 온도"><img src="/assets/image/sub/system/analysis-04-01-01.png" alt="최대 온도"></td>
+                                <td data-label="제동 종료시"><img src="/assets/image/sub/system/analysis-04-01-02.png" alt="제동 종료시"></td>
+                                <td data-label="상온 도달시"><img src="/assets/image/sub/system/analysis-04-01-03.png" alt="상온 도달시"></td>
+                            </tr>
+                            <tr>
+                                <td class="row-title">최적화 모델</td>
+                                <td data-label="최대 온도"><img src="/assets/image/sub/system/analysis-04-01-04.png" alt="최대 온도"></td>
+                                <td data-label="제동 종료시"><img src="/assets/image/sub/system/analysis-04-01-05.png" alt="제동 종료시"></td>
+                                <td data-label="상온 도달시"><img src="/assets/image/sub/system/analysis-04-01-06.png" alt="상온 도달시"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="footer-wrapper">
+                <ul class="footer-top-list">
+                    <li class="footer-top-list-item"><a href="/sub/etc/privacy.html">개인정보취급방침</a></li>
+                    <li class="footer-top-list-item"><a href="/sub/etc/email.html">이메일무단수집거부</a></li>
+                    <li class="footer-top-list-item"><a href="/sub/etc/sitemap.html">사이트맵</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer=bot">
+            <div class="footer-wrapper">
+                <div class="footer-logo"><img src="/assets/image/logo-c0.png" alt="카테 로고" /></div>
+                <ul class="footer-content">
+                    <li>본사 및 기술연구소 : 경남 창원시 의창구 차상로 182-30(팔용동)</li>
+                    <li>TEL : 055-287-8546 | FAX : 055-252-8547</li>
+                    <li>Copyright ⓒ 2025 KATEM. All right reserved.</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <button id="topBtn" title="맨 위로 이동">↑</button>
+    <script src="/scripts/header.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll('.section-devider .tab-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.section-devider .tab-btn').forEach(b => b.classList.remove('sel'));
+                    btn.classList.add('sel');
+
+                    document.querySelectorAll('.devide-section-container .tab-content').forEach(sec => sec.classList.remove('active'));
+
+                    const target = btn.getAttribute('data-target');
+                    document.querySelector('.' + target).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KATEM - 동력전달용 부품 전문기업</title>
+
+    <link rel="icon" href="/favicon.ico">
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/sub.css">
+    <link rel="stylesheet" href="/css/variables.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+</head>
+
+<body>
+    <header id="header" class="sub">
+        <div class="header-top">
+            <div class="header-wrapper">
+                <a class="header-sitemap" href="/sub/etc/sitemap.html">三</a>
+                <div class="header-logo">
+                    <a href="/index.html"><img src="/assets/image/logo-c0.png" alt="카템 로고" /></a>
+                </div>
+                <div class="header-language-selector">
+                    <a href="/index.html" class="sel">KOR</a>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="/eng/index.html">ENG</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-bot">
+            <div class="header-wrapper">
+                <ul class="nav-main">
+                    <li class="nav-main-item"><a href="/sub/company/greeting.html">회사소개</a></li>
+                    <li class="nav-main-item"><a href="/sub/business/train.html">사업분야</a></li>
+                    <li class="nav-main-item"><a href="/sub/product/product1.html">제품소개</a></li>
+                    <li class="nav-main-item"><a href="/sub/management/quality.html">지속가능경영</a></li>
+                    <li class="nav-main-item"><a href="/sub/system/laboratory.html">R&D</a></li>
+                    <li class="nav-main-item"><a href="/sub/service/notice.html">고객센터</a></li>
+                </ul>
+                <ul class="nav-subs">
+                    <li class="nav-subs-item">
+                        <ul class="nav-subs-list">
+                            <li class="nav-subs-list-item"><a href="/sub/company/greeting.html">인사말</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/company/history.html">연혁</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/company/vision.html">비전 & 경영이념</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/company/ideal.html">인재상</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/company/organization.html">조직도</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-subs-item">
+                        <ul class="nav-subs-list">
+                            <li class="nav-subs-list-item"><a href="/sub/business/train.html">고속철도</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/business/defense.html">방산부품</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/business/construction.html">건설장비</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/business/vehicle.html">상용차</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-subs-item">
+                        <ul class="nav-subs-list">
+                            <li class="nav-subs-list-item"><a href="/sub/product/product1.html">제동디스크</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/product/product2.html">트리포드 구동축</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/product/product3.html">굴삭기용 구동축</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/product/product4.html">드라이브샤프트 류</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-subs-item">
+                        <ul class="nav-subs-list">
+                            <li class="nav-subs-list-item"><a href="/sub/management/quality.html">품질경영</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/management/ethic.html">윤리경영</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-subs-item">
+                        <ul class="nav-subs-list">
+                            <li class="nav-subs-list-item"><a href="/sub/system/laboratory.html">연구소 개요</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/system/analysis.html">해석</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/system/evaluation.html">신뢰성 평가</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/system/rnd.html">연구개발</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/system/license.html">특허</a></li>
+                        </ul>
+                    <li class="nav-subs-item">
+                        <ul class="nav-subs-list">
+                            <li class="nav-subs-list-item"><a href="/sub/service/notice.html">공지사항</a></li>
+                            <li class="nav-subs-list-item"><a href="/sub/service/product.html">제품문의</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <button id="mobile-menu-btn" aria-label="모바일 메뉴 열기">三</button>
+        <!-- 모바일 사이드 메뉴 -->
+        <nav id="mobile-side-menu" aria-hidden="true">
+            <div class="mobile-menu-header">
+                <a href="/index.html" class="mobile-logo">
+                    <img src="/assets/image/logo-c0.png" alt="카템 로고" />
+                </a>
+                <button id="mobile-menu-close-btn" aria-label="모바일 메뉴 닫기">&times;</button>
+            </div>
+
+            <div class="mobile-language-switcher">
+                <button class="lang-btn sel" data-lang="kor">KOR</button>
+                <button class="lang-btn" data-lang="eng">ENG</button>
+            </div>
+
+            <ul class="mobile-nav-main">
+                <li class="has-submenu">
+                    <button class="accordion-btn" aria-expanded="false">
+                        회사소개
+                        <span class="arrow"></span>
+                    </button>
+                    <ul class="submenu">
+                        <li><a href="/sub/company/greeting.html">인사말</a></li>
+                        <li><a href="/sub/company/history.html">연혁</a></li>
+                        <li><a href="/sub/company/vision.html">비전 & 경영이념</a></li>
+                        <li><a href="/sub/company/ideal.html">인재상</a></li>
+                        <li><a href="/sub/company/organization.html">조직도</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <button class="accordion-btn" aria-expanded="false">
+                        사업분야
+                        <span class="arrow"></span>
+                    </button>
+                    <ul class="submenu">
+                        <li><a href="/sub/business/train.html">고속철도</a></li>
+                        <li><a href="/sub/business/defense.html">방산부품</a></li>
+                        <li><a href="/sub/business/construction.html">건설장비</a></li>
+                        <li><a href="/sub/business/vehicle.html">상용차</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <button class="accordion-btn" aria-expanded="false">
+                        제품소개
+                        <span class="arrow"></span>
+                    </button>
+                    <ul class="submenu">
+                        <li><a href="/sub/product/product1.html">제동디스크</a></li>
+                        <li><a href="/sub/product/product2.html">트리포드 구동축</a></li>
+                        <li><a href="/sub/product/product3.html">굴삭기용 구동축</a></li>
+                        <li><a href="/sub/product/product4.html">드라이브샤프트 류</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <button class="accordion-btn" aria-expanded="false">
+                        지속가능경영
+                        <span class="arrow"></span>
+                    </button>
+                    <ul class="submenu">
+                        <li><a href="/sub/management/quality.html">품질경영</a></li>
+                        <li><a href="/sub/management/ethic.html">윤리경영</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <button class="accordion-btn" aria-expanded="false">
+                        R&D
+                        <span class="arrow"></span>
+                    </button>
+                    <ul class="submenu">
+                        <li><a href="/sub/system/laboratory.html">연구소 개요</a></li>
+                        <li><a href="/sub/system/analysis.html">해석</a></li>
+                        <li><a href="/sub/system/evaluation.html">신뢰성 평가</a></li>
+                        <li><a href="/sub/system/rnd.html">연구개발</a></li>
+                        <li><a href="/sub/system/license.html">특허</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-submenu">
+                    <button class="accordion-btn" aria-expanded="false">
+                        고객센터
+                        <span class="arrow"></span>
+                    </button>
+                    <ul class="submenu">
+                        <li><a href="/sub/service/notice.html">공지사항</a></li>
+                        <li><a href="/sub/service/product.html">제품문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="sub-content-header product">
+        <div class="sub-content-title">제동디스크</div>
+    </div>
+    <div class="sub-nav">
+        <ul class="nav-list">
+            <li class="nav-list-item">
+                <b>제동디스크</b>
+            </li>
+            <li class="nav-list-item">
+                <a href="/sub/product/product2.html">트리포드 구동축</a>
+            </li>
+            <li class="nav-list-item">
+                <a href="/sub/product/product3.html">굴삭기용 구동축</a>
+            </li>
+            <li class="nav-list-item">
+                <a href="/sub/product/product4.html">드라이브샤프트 류</a>
+            </li>
+        </ul>
+    </div>
+    <div class="sub-content-container">
+        <div class="sub-content-main product">
+            <div class="management-container">
+                <div class="section-devider first">
+                    <div class="sel tab-btn" data-target="cardan-section">단조강 디스크</div>
+                    <div class="tab-btn" data-target="ktx-san-section">주조강 디스크</div>
+                </div>
+                <div class="section-devider">
+                    <div class="tab-btn" data-target="ktx-disc-section">차륜 디스크</div>
+                    <div class="tab-btn" data-target="brake-section">차축 디스크</div>
+                </div>
+            </div>
+            <div class="devide-section-container">
+                <div class="cardan-section tab-content active">
+                    <h3 class="detail-title">KTX용 단조강 디스크</h3>
+                    <div class="detail-content">
+                        <div class="detail-img-box">
+                            <div class="model-wrapper">
+                                <model-viewer src="/assets/model/product1-01.glb" alt="KTX용 단조강 디스크 3D 모델" auto-rotate
+                                    interaction-prompt="auto" rotation-per-second="30deg" camera-controls
+                                    class="product-detail-model">
+                                </model-viewer>
+                                <div class="loading-message">
+                                    3D 모델을 불러오는 중입니다. <br />잠시만 기다려주세요...
+                                </div>
+                            </div>
+
+                            <div class="detail-img-subs-container">
+                                <img class="detail-img-subs" src="/assets/image/sub/product/product1-01-subs-01.png"
+                                    alt="KTX용 단조강 디스크 서브이미지 01" />
+                                <img class="detail-img-subs" src="/assets/image/sub/product/product1-01-subs-02.png"
+                                    alt="KTX용 단조강 디스크 서브이미지 02" />
+                                <img class="detail-img-subs" src="/assets/image/sub/product/product1-01-subs-03.png"
+                                    alt="KTX용 단조강 디스크 서브이미지 03" />
+                            </div>
+                        </div>
+                        <div class="detail-text-box">
+                            <div class="detail-text-set">
+                                <h3>적용 분야</h3>
+                                <ul>
+                                    <li>고속열차 (KTX)</li>
+                                </ul>
+                            </div>
+                            <div class="detail-text-set">
+                                <h3>제품 사양</h3>
+                                <ul>
+                                    <li>외경(O.D): 640mm</li>
+                                    <li>폭(Width): 375mm</li>
+                                    <li>내경(I.D): 200mm</li>
+                                </ul>
+                            </div>
+                            <div class="detail-text-set">
+                                <h3>제품 특징</h3>
+                                <ul>
+                                    <li>단조 솔리드 타입</li>
+                                    <li>더블 디스크 타입</li>
+                                    <li>차축 장착 방식</li>
+                                </ul>
+                            </div>
+                            <div class="detail-text-set">
+                                <h3>적용 규격</h3>
+                                <ul>
+                                    <li>NF F 14535-1 : 2019</li>
+                                    <li>NF F 14535-3 : 2016</li>
+                                    <li>NF F 11-414 : 2016</li>
+                                    <li>UIC 541-3 제8판 : 2017</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ktx-san-section tab-content">
+                    <h3 class="detail-title">KTX-산천용 주조강 디스크</h3>
+                    <div class="detail-content">
+                        <div class="detail-img-box">
+                            <div class="model-wrapper">
+                                <model-viewer src="/assets/model/product1-02.glb" alt="KTX-산천용 주조강 디스크 3D 모델"
+                                    auto-rotate interaction-prompt="auto" rotation-per-second="30deg" camera-controls
+                                    class="product-detail-model">
+                                </model-viewer>
+                                <div class="loading-message">
+                                    3D 모델을 불러오는 중입니다. <br />잠시만 기다려주세요...
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="detail-text-box">
+                            <div class="detail-text-set">
+                                <h3>적용 분야</h3>
+                                <ul>
+                                    <li>고속열차 (KTX-산천)</li>
+                                </ul>
+                            </div>
+                            <div class="detail-text-set">
+                                <h3>제품 사양</h3>
+                                <ul>
+                                    <li>외경(O.D): 640mm</li>
+                                    <li>폭(Width): 150mm</li>
+                                    <li>내경(I.D): 200mm</li>
+                                    <li>두께(Thickness): 80mm</li>
+                                </ul>
+                            </div>
+                            <div class="detail-text-set">
+                                <h3>제품 특징</h3>
+                                <ul>
+                                    <li>주조강 통풍형</li>
+                                    <li>일체형 구조</li>
+                                    <li>차축 장착 방식</li>
+                                </ul>
+                            </div>
+                            <div class="detail-text-set">
+                                <h3>적용 규격</h3>
+                                <ul>
+                                    <li>NF F 14535-1 : 2019</li>
+                                    <li>NF F 14535-3 : 2016</li>
+                                    <li>NF F 11-414 : 2016</li>
+                                    <li>UIC 541-3 제8판 : 2017</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ktx-disc-section tab-content">
+                    <h3 class="detail-title">전기기관차용 차륜 디스크</h3>
+                    <div class="detail-content">
+                        <div class="detail-img-box">
+                            <div class="model-wrapper">
+                                <model-viewer src="/assets/model/product1-03.glb" alt="전기기관차용 차륜 디스크 3D 모델" auto-rotate
+                                    interaction-prompt="auto" rotation-per-second="30deg" camera-controls
+                                    class="product-detail-model">
+                                </model-viewer>
+                                <div class="loading-message">
+                                    3D 모델을 불러오는 중입니다. <br />잠시만 기다려주세요...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail-text-box">
+                            <div class="detail-text-set">
+                                <h3>적용 분야</h3>
+                                <ul>
+                                    <li>150km/h 열차 (전기기관차)</li>
+                                </ul>
+                            </div>
+                            <div class="detail-text-set">
+                                <h3>제품 사양</h3>
+                                <ul>
+                                    <li>외경(O.D): 1040mm</li>
+                                    <li>내경(I.D): 740mm</li>
+                                    <li>두께(Thickness): 52.5mm</li>
+                                </ul>
+                            </div>
+                            <div class="detail-text-set">
+                                <h3>제품 특징</h3>
+                                <ul>
+                                    <li>휠 장착 방식</li>
+                                    <li>체결부 강도 보강을 통한 균열 방지</li>
+                                </ul>
+                            </div>
+                            <div class="detail-text-set">
+                                <h3>적용 규격</h3>
+                                <ul>
+                                    <li>NF F 14535-2 : 2019</li>
+                                    <li>NF F 14535-3 : 2016</li>
+                                    <li>UIC 541-3 제8판 : 2017</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="detail-title">간선철도용 차륜 디스크</h3>
+                    <div class="detail-content">
+                        <div class="detail-img-box">
+                            <div class="model-wrapper">
+                                <model-viewer src="/assets/model/product1-05.glb" alt="간선철도용 차륜 디스크 3D 모델" auto-rotate
+                                    interaction-prompt="auto" rotation-per-second="30deg" camera-controls
+                                    class="product-detail-model">
+                                </model-viewer>
+                                <div class="loading-message">
+                                    3D 모델을 불러오는 중입니다. <br />잠시만 기다려주세요...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail-text-box">
+                            <div class="detail-text-set">
+                                <h3>적용 분야</h3>
+                                <ul>
+                                    <li>150km/h급 도시 간 열차 (Inter-city Train)</li>
+                                </ul>
+                            </div>
+                            <div class="detail-text-set">
+                                <h3>제품 사양</h3>
+                                <ul>
+                                    <li>외경(O.D): 680mm</li>
+                                    <li>내경(I.D): 390mm</li>
+                                    <li>두께(T): 53mm</li>
+                                </ul>
+                            </div>
+                            <div class="detail-text-set">
+                                <h3>제품 특징</h3>
+                                <ul>
+                                    <li>차륜 장착 방식</li>
+                                    <li>고정부 강도 보강으로 인한 균열 방지</li>
+                                </ul>
+                            </div>
+                            <div class="detail-text-set">
+                                <h3>적용 규격</h3>
+                                <ul>
+                                    <li>NF F 14535-2 : 2019</li>
+                                    <li>NF F 14535-3 : 2016</li>
+                                    <li>UIC 541-3 8th Edition : 2017</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="brake-section tab-content">
+                    <h3 class="detail-title">간선철도용 차축 디스크</h3>
+                    <div class="detail-content">
+                        <div class="detail-img-box">
+                            <div class="model-wrapper">
+                                <model-viewer src="/assets/model/product1-04.glb" alt="간선철도용 차축 디스크 3D 모델" auto-rotate
+                                    interaction-prompt="auto" rotation-per-second="30deg" camera-controls
+                                    class="product-detail-model">
+                                </model-viewer>
+                                <div class="loading-message">
+                                    3D 모델을 불러오는 중입니다. <br />잠시만 기다려주세요...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail-text-box">
+                            <div class="detail-text-set">
+                                <h3>적용 분야</h3>
+                                <ul>
+                                    <li>도시간 열차 (Inter-city train)</li>
+                                </ul>
+                            </div>
+                            <div class="detail-text-set">
+                                <h3>제품 사양</h3>
+                                <ul>
+                                    <li>외경(O.D): 660mm</li>
+                                    <li>폭(Width): 150mm</li>
+                                    <li>내경(I.D): 200mm</li>
+                                </ul>
+                            </div>
+                            <div class="detail-text-set">
+                                <h3>제품 특징</h3>
+                                <ul>
+                                    <li>통풍형 디스크</li>
+                                    <li>일체형 타입</li>
+                                    <li>차축 장착 방식</li>
+                                </ul>
+                            </div>
+                            <div class="detail-text-set">
+                                <h3>적용 규격</h3>
+                                <ul>
+                                    <li>NF F 14535-1 : 2019</li>
+                                    <li>NF F 14535-3 : 2016</li>
+                                    <li>NF F 11-414 : 2016</li>
+                                    <li>UIC 541-3 8th Edition : 2017</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+            <div class="product-container">
+                <ul class="img-list-container product1">
+                    <li class="product-list sel">
+                        <h3>KTX용</h3>
+                        <p>단조강 디스크</p>
+                    </li>
+                    <li class="product-list">
+                        <h3>KTX-산천용</h3>
+                        <p>주조강 디스크</p>
+                    </li>
+                    <li class="product-list">
+                        <h3>전기기관차용</h3>
+                        <p>차륜 디스크</p>
+                    </li>
+                    <li class="product-list">
+                        <h3>간선철도용</h3>
+                        <p>차축 디스크</p>
+                    </li>
+                    <li class="product-list">
+                        <h3>간선철도용</h3>
+                        <p>차륜 디스크</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="product-detail-container sel">
+                <h3 class="detail-title">KTX용 단조강 디스크</h3>
+                <div class="detail-content">
+                    <div class="detail-img-box">
+                        <model-viewer src="/assets/model/product1-01.glb" alt="KTX용 단조강 디스크 3D 모델" auto-rotate
+                            interaction-prompt="auto" rotation-per-second="30deg" camera-controls
+                            class="product-detail-model">
+                        </model-viewer>
+                        <div class="detail-img-subs-container">
+                            <img class="detail-img-subs" src="/assets/image/sub/product/product1-01-subs-01.png"
+                                alt="KTX용 단조강 디스크 서브이미지 01" />
+                            <img class="detail-img-subs" src="/assets/image/sub/product/product1-01-subs-02.png"
+                                alt="KTX용 단조강 디스크 서브이미지 02" />
+                            <img class="detail-img-subs" src="/assets/image/sub/product/product1-01-subs-03.png"
+                                alt="KTX용 단조강 디스크 서브이미지 03" />
+                        </div>
+                    </div>
+                    <div class="detail-text-box">
+                        <div class="detail-text-set">
+                            <h3>적용 분야</h3>
+                            <ul>
+                                <li>고속열차 (KTX)</li>
+                            </ul>
+                        </div>
+                        <div class="detail-text-set">
+                            <h3>제품 사양</h3>
+                            <ul>
+                                <li>외경(O.D): 640mm</li>
+                                <li>폭(Width): 375mm</li>
+                                <li>내경(I.D): 200mm</li>
+                            </ul>
+                        </div>
+                        <div class="detail-text-set">
+                            <h3>제품 특징</h3>
+                            <ul>
+                                <li>단조 솔리드 타입</li>
+                                <li>일체형 구조</li>
+                                <li>차축 장착 방식</li>
+                            </ul>
+                        </div>
+                        <div class="detail-text-set">
+                            <h3>적용 규격</h3>
+                            <ul>
+                                <li>NF F 14535-1 : 2019</li>
+                                <li>NF F 14535-3 : 2016</li>
+                                <li>NF F 11-414 : 2016</li>
+                                <li>UIC 541-3 제8판 : 2017</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-detail-container">
+                <h3 class="detail-title">KTX-산천용 주조강 디스크</h3>
+                <div class="detail-content">
+                    <div class="detail-img-box">
+                        <model-viewer src="/assets/model/product1-02.glb" alt="KTX-산천용 주조강 디스크 3D 모델" auto-rotate
+                            interaction-prompt="auto" rotation-per-second="30deg" camera-controls
+                            class="product-detail-model">
+                        </model-viewer>
+                    </div>
+                    <div class="detail-text-box">
+                        <div class="detail-text-set">
+                            <h3>적용 분야</h3>
+                            <ul>
+                                <li>고속열차 (KTX-산천)</li>
+                            </ul>
+                        </div>
+                        <div class="detail-text-set">
+                            <h3>제품 사양</h3>
+                            <ul>
+                                <li>외경(O.D): 640mm</li>
+                                <li>폭(Width): 150mm</li>
+                                <li>내경(I.D): 200mm</li>
+                                <li>두께(Thickness): 80mm</li>
+                            </ul>
+                        </div>
+                        <div class="detail-text-set">
+                            <h3>제품 특징</h3>
+                            <ul>
+                                <li>통풍형</li>
+                                <li>일체형 구조</li>
+                                <li>차축 장착 방식</li>
+                            </ul>
+                        </div>
+                        <div class="detail-text-set">
+                            <h3>적용 규격</h3>
+                            <ul>
+                                <li>NF F 14535-1 : 2019</li>
+                                <li>NF F 14535-3 : 2016</li>
+                                <li>NF F 11-414 : 2016</li>
+                                <li>UIC 541-3 제8판 : 2017</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-detail-container">
+                <h3 class="detail-title">전기기관차용 차륜 디스크</h3>
+                <div class="detail-content">
+                    <div class="detail-img-box">
+                        <model-viewer src="/assets/model/product1-03.glb" alt="전기기관차용 차륜 디스크 3D 모델" auto-rotate
+                            interaction-prompt="auto" rotation-per-second="30deg" camera-controls
+                            class="product-detail-model">
+                        </model-viewer>
+                    </div>
+                    <div class="detail-text-box">
+                        <div class="detail-text-set">
+                            <h3>적용 분야</h3>
+                            <ul>
+                                <li>150km/h 열차 (전기기관차)</li>
+                            </ul>
+                        </div>
+                        <div class="detail-text-set">
+                            <h3>제품 사양</h3>
+                            <ul>
+                                <li>외경(O.D): 1040mm</li>
+                                <li>내경(I.D): 740mm</li>
+                                <li>두께(Thickness): 52.5mm</li>
+                            </ul>
+                        </div>
+                        <div class="detail-text-set">
+                            <h3>제품 특징</h3>
+                            <ul>
+                                <li>휠 장착 방식</li>
+                                <li>체결부 강도 보강을 통한 균열 방지</li>
+                            </ul>
+                        </div>
+                        <div class="detail-text-set">
+                            <h3>적용 규격</h3>
+                            <ul>
+                                <li>NF F 14535-2 : 2019</li>
+                                <li>NF F 14535-3 : 2016</li>
+                                <li>UIC 541-3 제8판 : 2017</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-detail-container">
+                <h3 class="detail-title">간선철도용 차축 디스크</h3>
+                <div class="detail-content">
+                    <div class="detail-img-box">
+                        <model-viewer src="/assets/model/product1-04.glb" alt="간선철도용 차축 디스크 3D 모델" auto-rotate
+                            interaction-prompt="auto" rotation-per-second="30deg" camera-controls
+                            class="product-detail-model">
+                        </model-viewer>
+                    </div>
+                    <div class="detail-text-box">
+                        <div class="detail-text-set">
+                            <h3>적용 분야</h3>
+                            <ul>
+                                <li>도시간 열차 (Inter-city train)</li>
+                            </ul>
+                        </div>
+                        <div class="detail-text-set">
+                            <h3>제품 사양</h3>
+                            <ul>
+                                <li>외경(O.D): 660mm</li>
+                                <li>폭(Width): 150mm</li>
+                                <li>내경(I.D): 200mm</li>
+                            </ul>
+                        </div>
+                        <div class="detail-text-set">
+                            <h3>제품 특징</h3>
+                            <ul>
+                                <li>통풍형 디스크</li>
+                                <li>일체형 타입</li>
+                                <li>차축 장착 방식</li>
+                            </ul>
+                        </div>
+                        <div class="detail-text-set">
+                            <h3>적용 규격</h3>
+                            <ul>
+                                <li>NF F 14535-1 : 2019</li>
+                                <li>NF F 14535-3 : 2016</li>
+                                <li>NF F 11-414 : 2016</li>
+                                <li>UIC 541-3 8th Edition : 2017</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-detail-container">
+                <h3 class="detail-title">간선철도용 차륜 디스크</h3>
+                <div class="detail-content">
+                    <div class="detail-img-box">
+                        <model-viewer src="/assets/model/product1-05.glb" alt="간선철도용 차륜 디스크 3D 모델" auto-rotate
+                            interaction-prompt="auto" rotation-per-second="30deg" camera-controls
+                            class="product-detail-model">
+                        </model-viewer>
+                    </div>
+                    <div class="detail-text-box">
+                        <div class="detail-text-set">
+                            <h3>적용 분야</h3>
+                            <ul>
+                                <li>150km/h급 도시 간 열차 (Inter-city Train)</li>
+                            </ul>
+                        </div>
+                        <div class="detail-text-set">
+                            <h3>제품 사양</h3>
+                            <ul>
+                                <li>외경(O.D): 680mm</li>
+                                <li>내경(I.D): 390mm</li>
+                                <li>두께(T): 53mm</li>
+                            </ul>
+                        </div>
+                        <div class="detail-text-set">
+                            <h3>제품 특징</h3>
+                            <ul>
+                                <li>차륜 장착 방식</li>
+                                <li>고정부 강도 보강으로 인한 균열 방지</li>
+                            </ul>
+                        </div>
+                        <div class="detail-text-set">
+                            <h3>적용 규격</h3>
+                            <ul>
+                                <li>NF F 14535-2 : 2019</li>
+                                <li>NF F 14535-3 : 2016</li>
+                                <li>UIC 541-3 8th Edition : 2017</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            -->
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="footer-wrapper">
+                <ul class="footer-top-list">
+                    <li class="footer-top-list-item"><a href="/sub/etc/privacy.html">개인정보취급방침</a></li>
+                    <li class="footer-top-list-item"><a href="/sub/etc/email.html">이메일무단수집거부</a></li>
+                    <li class="footer-top-list-item"><a href="/sub/etc/sitemap.html">사이트맵</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer=bot">
+            <div class="footer-wrapper">
+                <div class="footer-logo"><img src="/assets/image/logo-c0.png" alt="카테 로고" /></div>
+                <ul class="footer-content">
+                    <li>본사 및 기술연구소 : 경남 창원시 의창구 차상로 182-30(팔용동)</li>
+                    <li>TEL : 055-287-8546 | FAX : 055-252-8547</li>
+                    <li>Copyright ⓒ 2025 KATEM. All right reserved.</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <button id="topBtn" title="맨 위로 이동">↑</button>
+    <script src="/scripts/header.js"></script>
+    <script>
+        /*document.addEventListener("DOMContentLoaded", function () {
+            const productItems = document.querySelectorAll(".product-list");
+            const detailContainers = document.querySelectorAll(".product-detail-container");
+
+            productItems.forEach((item, index) => {
+                item.addEventListener("click", () => {
+                    productItems.forEach(i => i.classList.remove("sel"));
+                    detailContainers.forEach(c => c.style.display = "none");
+
+                    item.classList.add("sel");
+                    detailContainers[index].style.display = "block";
+
+                    detailContainers[index].scrollIntoView({ behavior: "smooth" });
+                });
+            });
+        });*/
+
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll('.section-devider .tab-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.section-devider .tab-btn').forEach(b => b.classList.remove('sel'));
+                    btn.classList.add('sel');
+
+                    document.querySelectorAll('.devide-section-container .tab-content').forEach(sec => sec.classList.remove('active'));
+
+                    const target = btn.getAttribute('data-target');
+                    document.querySelector('.' + target).classList.add('active');
+                });
+            });
+            document.querySelectorAll(".model-wrapper").forEach(wrapper => {
+                const viewer = wrapper.querySelector("model-viewer");
+                const loadingMessage = wrapper.querySelector(".loading-message");
+
+                viewer.addEventListener("load", () => {
+                    loadingMessage.style.display = "none";
+                });
+            });
+        });        
+    </script>
+
+
+</body>
+
+</html>
