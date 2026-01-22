@@ -101,17 +101,62 @@ window.addEventListener('mouseup', () => {
 });
 
 
-  const equipmentObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
-        }
-      });
-    },
-    { threshold: 0.3 }
-  );
+const equipmentObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  },
+  { threshold: 0.3 }
+);
 
-  document.querySelectorAll('.fade-slide').forEach(el => {
-    equipmentObserver.observe(el);
+document.querySelectorAll('.fade-slide').forEach(el => {
+  equipmentObserver.observe(el);
+});
+
+
+/* 스크롤 등장 */
+const cards = document.querySelectorAll('.quality__card');
+
+const qualityObserver = new IntersectionObserver(
+  entries => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add('is-visible');
+        }, i * 120); // 순차 등장
+        qualityObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.3 }
+);
+
+cards.forEach(card => qualityObserver.observe(card));
+
+cards.forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const rect = card.getBoundingClientRect();
+
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const rotateY = ((x / rect.width) - 0.5) * 10;
+    const rotateX = ((y / rect.height) - 0.5) * -10;
+
+    card.style.transform = `
+      rotateX(${rotateX}deg)
+      rotateY(${rotateY}deg)
+      translateZ(8px)
+    `;
   });
+
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = `
+      rotateX(0deg)
+      rotateY(0deg)
+    `;
+  });
+});

@@ -169,6 +169,27 @@ section {
 
 .product {
   height: auto;
+  background: var(--primary-5);
+}
+
+.product .inner__title,
+.product .inner__desc,
+.product .section__guide {
+  mix-blend-mode: normal;
+}
+
+.vision .section__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+.vision__desc {
+  padding-right: 120px;
+  color: var(--white-5);
+  opacity: .72;
 }
 
 .product .section__wrapper {
@@ -229,7 +250,7 @@ section {
 }
 
 .equipment {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .equipment .section__wrapper {
@@ -282,4 +303,99 @@ section {
 .delay-2 {
   top: 60%;
   right: 240px;
+}
+
+
+.quality .section__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.quality__inner {
+  padding: 0 160px 20px;
+}
+
+
+/* 전체 레이아웃 */
+.quality__desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-left: 160px;
+  gap: 32px;
+}
+
+.quality__card {
+  position: relative;
+  padding: 32px;
+  border-radius: 4px;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.18),
+    0 20px 40px rgba(0,0,0,0.25);
+
+  transform-style: preserve-3d;
+  transition: transform 0.25s ease;
+}
+
+/* 진짜 핵심: 빛 레이어 */
+.quality__card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+
+  background: linear-gradient(
+    to bottom right,
+    rgba(255,255,255,0.22),
+    rgba(255,255,255,0.12) 30%,
+    rgba(255,255,255,0.04) 55%,
+    transparent 70%
+  );
+
+  opacity: 0;
+  transform: translateZ(30px);
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+/* 호버 시에만 은은하게 */
+.quality__card:hover::after {
+  opacity: 1;
+}
+
+
+/* 타이틀 */
+.card__title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: var(--white-4);
+  opacity: .94;
+}
+
+/* 리스트 */
+.card__list {
+  color: var(--white-5);
+  opacity: .87;
+}
+
+.card__list li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* 스크롤 등장 */
+.quality__card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }

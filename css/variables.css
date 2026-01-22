@@ -21,6 +21,10 @@
     --secondary-4: #4ABC33;
     --secondary-5: #2E8B1F;
 
+    --process: #1e5ac8;   /* 안정 / 공정 */
+    --zerodefect: #2f8f6b; /* 무결점 / 신뢰 */
+    --defense: #5b4db7;   /* 시스템 / 국방 */
+
     /* ===============================
        Neutral Colors
     =============================== */
