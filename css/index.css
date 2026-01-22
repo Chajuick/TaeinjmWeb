@@ -117,7 +117,7 @@ section {
 .inner__title {
   position: static;
   z-index: 1;
-  color: rgba(255, 255, 255, .87);
+  color: var(--white-1);
   font-weight: 400;
   font-size: 40px;
   padding-top: 40px;
@@ -133,12 +133,13 @@ section {
 .inner__desc {
   position: static;
   z-index: 1;
-  color: rgba(255, 255, 255, .72);
+  color: var(--white-5);
   mix-blend-mode: difference;
   margin-bottom: 22px;
 }
 
 .inner__cta {
+  display: inline-block;
   position: static;
   z-index: 1;
   background-color: #3262ad;
@@ -321,11 +322,12 @@ section {
 /* 전체 레이아웃 */
 .quality__desc {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: start;
-  align-items: center;
+  align-items: start;
   padding-left: 160px;
   gap: 32px;
+  height: 240px;
 }
 
 .quality__card {
@@ -340,11 +342,16 @@ section {
   border: 1px solid rgba(255, 255, 255, 0.12);
 
   box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.18),
-    0 20px 40px rgba(0,0,0,0.25);
+    inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    0 20px 40px rgba(0, 0, 0, 0.25);
 
   transform-style: preserve-3d;
   transition: transform 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: start;
+  height: 100%;
 }
 
 /* 진짜 핵심: 빛 레이어 */
@@ -354,13 +361,11 @@ section {
   inset: 0;
   border-radius: inherit;
 
-  background: linear-gradient(
-    to bottom right,
-    rgba(255,255,255,0.22),
-    rgba(255,255,255,0.12) 30%,
-    rgba(255,255,255,0.04) 55%,
-    transparent 70%
-  );
+  background: linear-gradient(to bottom right,
+      rgba(255, 255, 255, 0.22),
+      rgba(255, 255, 255, 0.12) 30%,
+      rgba(255, 255, 255, 0.04) 55%,
+      transparent 70%);
 
   opacity: 0;
   transform: translateZ(30px);
@@ -398,4 +403,104 @@ section {
 .quality__card.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+.cta {
+  position: relative;
+  padding: 120px 24px;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  transition: transform 0.4s ease;
+}
+
+.cta::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  width: 0;
+  height: 0;
+  border-top: 2px solid #3b82f6;
+  border-left: 2px solid #3b82f6;
+  opacity: 0;
+  z-index: 1;
+  transition:
+    width 0.4s ease,
+    height 0.4s ease,
+    opacity 0.2s ease;
+}
+
+.cta::after {
+  content: "";
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  width: 0;
+  height: 0;
+  border-bottom: 2px solid #3b82f6;
+  border-right: 2px solid #3b82f6;
+  opacity: 0;
+  z-index: 1;
+  transition:
+    width 0.4s ease,
+    height 0.4s ease,
+    opacity 0.2s ease;
+}
+
+.cta:hover::before,
+.cta:hover::after {
+  width: calc(100% - 48px);
+  height: calc(100% - 48px);
+  opacity: 1;
+}
+
+.cta::before,
+.cta::after {
+  filter: drop-shadow(0 0 6px rgba(59, 130, 246, 0.35));
+}
+
+/* 콘텐츠는 위로 */
+.cta>* {
+  position: relative;
+  z-index: 1;
+}
+
+.cta .inner__title {
+  margin-bottom: 24px;
+}
+
+.cta .inner__desc {
+  margin-bottom: 42px;
+}
+
+.cta:hover .inner__cta {
+  transform: scale(105%);
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.25);
+}
+
+.cta:hover .cta__bg {
+  transform: scale(1.05);
+  filter: brightness(0.9) saturate(0.95);
+}
+
+.cta__bg {
+  position: absolute;
+  inset: 0;
+  transition: all .4s;
+  background:
+    linear-gradient(to top,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.6) 40%,
+      rgba(0, 0, 0, 0.25) 70%,
+      rgba(0, 0, 0, 0) 100%),
+    url("/TaeinjmWeb/TaeinjmWeb/assets/image/index/cta-bg.jpg") center / cover no-repeat;
+  z-index: 0;
 }
