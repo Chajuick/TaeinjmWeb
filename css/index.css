@@ -5,6 +5,10 @@ section {
   background-color: #212121;
 }
 
+main {
+  overflow: hidden;
+}
+
 .hero {
   height: 100vh;
 }
@@ -110,7 +114,7 @@ section {
 }
 
 .hero__inner {
-  height: calc(100vh - 60px);
+  height: 100%;
   padding: 160px;
 }
 
@@ -165,6 +169,7 @@ section {
 .section__wrapper {
   margin: auto;
   max-width: 1420px;
+  height: 100%;
   position: relative;
 }
 
@@ -503,4 +508,83 @@ section {
       rgba(0, 0, 0, 0) 100%),
     url("/TaeinjmWeb/assets/image/index/cta-bg.jpg") center / cover no-repeat;
   z-index: 0;
+}
+
+
+
+
+
+
+/* 🔵 Desktop Large height 900px 기준 */
+@media (max-width: 1600px) {}
+
+/* 🟢 Desktop (기준 디자인) height 900px 기준 */
+@media (max-width: 1420px) {}
+
+/* 🟡 Tablet height 768px 기준 */
+@media (max-width: 1024px) {}
+
+/* 🟠 Mobile Large height 1024px 기준 */
+@media (max-width: 768px) {
+
+  .hero,
+  .section__wrapper {
+    height: auto;
+  }
+
+  .hero__frame {
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 120px;
+  }
+
+  .vision .section__wrapper {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .message__inner {
+    width: 100%;
+    padding: 60px 5vw 20px calc(15vw + 20px);
+    margin: 0 auto;
+  }
+
+  .message__inner .inner__cta {
+    margin-bottom: 42px;
+  }
+
+  .vision__desc {
+    padding: 0 5vw 20px calc(15vw + 20px);
+  }
+
+  .inner__title {
+    padding-top: 0;
+  }
+
+  .equipment .section__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .equipment__images {
+    width: 100vw;
+    height: auto;
+  }
+}
+
+/* 🔴 Mobile Small height 800px 기준 */
+@media (max-width: 480px) {
+  .section__guide {
+    left: 10vw;
+  }
+
+  .inner__title {
+    font-size: 24px;
+  }
+
+  .inner__title b {
+    font-size: 34px;
+  }
+
+
 }

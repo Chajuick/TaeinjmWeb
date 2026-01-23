@@ -1,6 +1,8 @@
 <link rel="stylesheet" href="/TaeinjmWeb/css/header.css" />
+<link rel="stylesheet" href="/css/header.css" />
 
 <body>
+    <!-- PC 네비 -->
     <div class="header__top">
         <div class="header__wrapper">
             <img src="/TaeinjmWeb/assets/image/logo.png" alt="태인정밀 로고" />
@@ -10,6 +12,7 @@
             </div>
         </div>
     </div>
+
     <nav class="header__bottom">
         <div class="header__wrapper">
             <div class="header__bottom-main">
@@ -47,4 +50,72 @@
             </div>
         </div>
     </nav>
+
+
+    <!-- 모바일 햄버거 -->
+    <button class="header__menu-button" aria-label="메뉴 열기">
+        <span class="header__menu-bar"></span>
+        <span class="header__menu-bar"></span>
+        <span class="header__menu-bar"></span>
+    </button>
+
+    <!-- 모바일 사이드 패널 -->
+    <aside class="header__drawer">
+        <div class="header__drawer-inner">
+            <button class="header__drawer-close" aria-label="메뉴 닫기">×</button>
+
+            <div class="header__lang-selector header__lang-selector--mobile">
+                <a href="#">KOR</a>
+                <a href="#">ENG</a>
+            </div>
+
+            <ul class="header__drawer-menu">
+                <li class="header__drawer-item">
+                    <button class="header__drawer-title">회사소개</button>
+                    <ul class="header__drawer-sub">
+                        <li><a href="#">인사말</a></li>
+                        <li><a href="#">비전 및 핵심가치</a></li>
+                        <li><a href="#">연혁</a></li>
+                    </ul>
+                </li>
+
+                <li class="header__drawer-item">
+                    <button class="header__drawer-title">설비</button>
+                    <ul class="header__drawer-sub">
+                        <li><a href="#">생산설비</a></li>
+                        <li><a href="#">시험측정장비</a></li>
+                    </ul>
+                </li>
+
+                <li class="header__drawer-item">
+                    <button class="header__drawer-title">생산제품</button>
+                    <ul class="header__drawer-sub">
+                        <li><a href="#">생산설비</a></li>
+                        <li><a href="#">시험측정장비</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="header__drawer-item">
+                    <button class="header__drawer-title">R&D</button>
+                    <ul class="header__drawer-sub">
+                        <li><a href="#">연구실적</a></li>
+                        <li><a href="#">특허</a></li>
+                        <li><a href="#">인증</a></li>
+                    </ul>
+                </li>
+
+                <li class="header__drawer-item">
+                    <button class="header__drawer-title">고객센터</button>
+                    <ul class="header__drawer-sub">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- 오버레이 -->
+    <div class="header__overlay"></div>
 </body>
